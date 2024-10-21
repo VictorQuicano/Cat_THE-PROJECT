@@ -1,295 +1,34 @@
-# 🚀 AstroWind
+# CUT The CATA
 
-<img src="https://raw.githubusercontent.com/onwidget/.github/main/resources/astrowind/lighthouse-score.png" align="right"
-     alt="AstroWind Lighthouse Score" width="100" height="358">
+[![forthebadge](http://forthebadge.com/images/badges/made-with-ruby.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
-🌟 _Most *starred* & *forked* Astro theme in 2022 & 2023_. 🌟
+[![Gem Version](https://badge.fury.io/rb/colorls.svg)](https://badge.fury.io/rb/colorls)
+[![CI](https://github.com/athityakumar/colorls/actions/workflows/ruby.yml/badge.svg)](https://github.com/athityakumar/colorls/actions/workflows/ruby.yml)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=shields)](http://makeapullrequest.com)
 
-**AstroWind** is a free and open-source template to make your website using **[Astro 4.0](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/)**. Ready to start a new project and designed taking into account web best practices.
+# Integrantes
 
-- ✅ **Production-ready** scores in **PageSpeed Insights** reports.
-- ✅ Integration with **Tailwind CSS** supporting **Dark mode** and **_RTL_**.
-- ✅ **Fast and SEO friendly blog** with automatic **RSS feed**, **MDX** support, **Categories & Tags**, **Social Share**, ...
-- ✅ **Image Optimization** (using new **Astro Assets** and **Unpic** for Universal image CDN).
-- ✅ Generation of **project sitemap** based on your routes.
-- ✅ **Open Graph tags** for social media sharing.
-- ✅ **Analytics** built-in Google Analytics, and Splitbee integration.
+- QUICAÑO MIRANDA, Victor Alejandro
+- RUIZ MAMANI, Eduardo
 
-<br>
+# Introducción
 
-<img src="https://raw.githubusercontent.com/onwidget/.github/main/resources/astrowind/screenshot-astrowind-1.png" alt="AstroWind Theme Screenshot">
+El avance de la realidad virtual (VR) ha transformado tanto el entretenimiento como los campos de investigación médica y psicológica, ofreciendo experiencias inmersivas que permiten evaluar diversas habilidades cognitivas y sensoriales. Esta tecnología se apoya en dispositivos como los cascos de realidad virtual (HMD), los cuales ofrecen una sensación de presencia e inmersión completa, permitiendo a los usuarios interactuar en entornos tridimensionales de manera efectiva. En particular, los sistemas de VR han demostrado ser herramientas útiles para evaluar habilidades cognitivas como la memoria espacial y la percepción de profundidad, incluso en individuos con limitaciones visuales, como la falta de estereopsis. Estudios recientes validan el uso de VR para evaluar y entrenar habilidades sensoriales en entornos controlados, algo que sería difícil de lograr en el mundo real [1][2]. Estas aplicaciones de VR han mostrado potencial no solo en la psicología, sino también en áreas como la evaluación oftalmológica y el entrenamiento profesional, como en la aviación [3].
+En este proyecto, se ha desarrollado un juego de realidad virtual en el que los usuarios deben defender la Tierra de una invasión de gatitos alienígenas, guiándose por el sonido tridimensional que estos emiten para atacarlos al ritmo adecuado. Este enfoque no solo busca atraer a jugadores casuales interesados en mejorar sus reflejos y coordinación, sino también ofrecer una herramienta innovadora para profesionales de la medicina, enfocada en la evaluación de habilidades sensoriales como la audición, la percepción espacial y la visión estereoscópica.
 
-[![onWidget](https://custom-icon-badges.demolab.com/badge/made%20by%20-onWidget-556bf2?style=flat-square&logo=onwidget&logoColor=white&labelColor=101827)](https://onwidget.com)
-[![License](https://img.shields.io/github/license/onwidget/astrowind?style=flat-square&color=dddddd&labelColor=000000)](https://github.com/onwidget/astrowind/blob/main/LICENSE.md)
-[![Maintained](https://img.shields.io/badge/maintained%3F-yes-brightgreen.svg?style=flat-square)](https://github.com/onwidget)
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/onwidget/astrowind#contributing)
-[![Known Vulnerabilities](https://snyk.io/test/github/onwidget/astrowind/badge.svg?style=flat-square)](https://snyk.io/test/github/onwidget/astrowind)
-[![Stars](https://img.shields.io/github/stars/onwidget/astrowind.svg?style=social&label=stars&maxAge=86400&color=ff69b4)](https://github.com/onwidget/astrowind)
-[![Forks](https://img.shields.io/github/forks/onwidget/astrowind.svg?style=social&label=forks&maxAge=86400&color=ff69b4)](https://github.com/onwidget/astrowind)
+# Tema
 
-<br>
+La evaluación de las capacidades sensoriales, especialmente la audición y la visión, es fundamental para el desarrollo y el bienestar de las personas [4]. Detectar de manera oportuna cualquier problema en estas áreas es crucial, ya que puede tener un impacto significativo en el aprendizaje, la comunicación y la calidad de vida de los individuos. Sin embargo, los métodos tradicionales de evaluación sensorial, como las pruebas de audiometría o los exámenes de visión, presentan limitaciones importantes, especialmente en lo que respecta a la simulación de escenarios del mundo real [5]. Estas pruebas tienden a ser poco amigables, en particular para los niños, lo que puede generar ansiedad y afectar la precisión de los diagnósticos. La falta de un entorno que se asemeje a la vida cotidiana impide que estos métodos evalúen adecuadamente capacidades como la audición espacial, esencial para la seguridad y la interacción social.
+En este contexto, surge la necesidad de desarrollar métodos de evaluación más innovadores y efectivos. La realidad virtual (RV) se presenta como una herramienta prometedora, al permitir la creación de entornos inmersivos que simulan situaciones reales de manera controlada y precisa [4]. A través de la RV, es posible evaluar habilidades sensoriales en condiciones más ecológicas y dinámicas, lo que facilita la identificación de problemas en áreas como la percepción de profundidad y la audición direccional. Esto es especialmente relevante en el caso de la audición en entornos tridimensionales, donde la capacidad de localizar sonidos y distinguirlos en medio de ruido ambiental es crucial para el funcionamiento diario. [7]
+El uso de la realidad virtual en la evaluación sensorial tiene múltiples beneficios, particularmente en poblaciones como los niños y personas con dificultades sensoriales [5]. La naturaleza inmersiva y lúdica de la RV puede aumentar la motivación y reducir la ansiedad que generan los entornos clínicos tradicionales [6]. Además, permite una evaluación más precisa de la audición en entornos acústicos complejos, manipulando variables como la posición de las fuentes sonoras o el ruido de fondo.
 
-<details open>
-<summary>Table of Contents</summary>
+# BIBLIOGRAFÍA
 
-- [Demo](#demo)
-- [Upcoming: AstroWind 2.0 – We Need Your Vision!](#-upcoming-astrowind-20--we-need-your-vision)
-- [Getting started](#getting-started)
-  - [Project structure](#project-structure)
-  - [Commands](#commands)
-  - [Configuration](#configuration)
-  - [Deploy](#deploy)
-- [Frequently Asked Questions](#frequently-asked-questions)
-- [Related Projects](#related-projects)
-- [Contributing](#contributing)
-- [Acknowledgements](#acknowledgements)
-- [License](#license)
-
-</details>
-
-<br>
-
-## Demo
-
-📌 [https://astrowind.vercel.app/](https://astrowind.vercel.app/)
-
-<br>
-
-## 🔔 Upcoming: AstroWind 2.0 – We Need Your Vision!
-
-We're embarking on an exciting journey with **AstroWind 2.0**, and we want you to be a part of it! We're currently taking the first steps in developing this new version and your insights are invaluable. Join the discussion and share your feedback, ideas, and suggestions to help shape the future of **AstroWind**. Let's make **AstroWind 2.0** even better, together!
-
-[Share Your Feedback in Our Discussion!](https://github.com/onwidget/astrowind/discussions/392)
-
-<br>
-
-## Getting started
-
-**AstroWind** tries to give you quick access to creating a website using [Astro 4.0](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/). It's a free theme which focuses on simplicity, good practices and high performance.
-
-Very little vanilla javascript is used only to provide basic functionality so that each developer decides which framework (React, Vue, Svelte, Solid JS...) to use and how to approach their goals.
-
-In this version the template supports all the options in the `output` configuration, `static`, `hybrid` and `server`, but the blog only works with `prerender = true`. We are working on the next version and aim to make it fully compatible with SSR.
-
-### Project structure
-
-Inside **AstroWind** template, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   ├── _headers
-│   └── robots.txt
-├── src/
-│   ├── assets/
-│   │   ├── favicons/
-│   │   ├── images/
-│   │   └── styles/
-│   │       └── tailwind.css
-│   ├── components/
-│   │   ├── blog/
-│   │   ├── common/
-│   │   ├── ui/
-│   │   ├── widgets/
-│   │   │   ├── Header.astro
-│   │   │   └── ...
-│   │   ├── CustomStyles.astro
-│   │   ├── Favicons.astro
-│   │   └── Logo.astro
-│   ├── content/
-│   │   ├── post/
-│   │   │   ├── post-slug-1.md
-│   │   │   ├── post-slug-2.mdx
-│   │   │   └── ...
-│   │   └-- config.ts
-│   ├── layouts/
-│   │   ├── Layout.astro
-│   │   ├── MarkdownLayout.astro
-│   │   └── PageLayout.astro
-│   ├── pages/
-│   │   ├── [...blog]/
-│   │   │   ├── [category]/
-│   │   │   ├── [tag]/
-│   │   │   ├── [...page].astro
-│   │   │   └── index.astro
-│   │   ├── index.astro
-│   │   ├── 404.astro
-│   │   ├-- rss.xml.ts
-│   │   └── ...
-│   ├── utils/
-│   ├── config.yaml
-│   └── navigation.js
-├── package.json
-├── astro.config.ts
-└── ...
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory if they do not require any transformation or in the `assets/` directory if they are imported directly.
-
-[![Edit AstroWind on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://githubbox.com/onwidget/astrowind/tree/main) [![Open in Gitpod](https://svgshare.com/i/xdi.svg)](https://gitpod.io/?on=gitpod#https://github.com/onwidget/astrowind) [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/onwidget/astrowind)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file `README.md`. Update `src/config.yaml` and contents. Have fun!
-
-<br>
-
-### Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command             | Action                                             |
-| :------------------ | :------------------------------------------------- |
-| `npm install`       | Installs dependencies                              |
-| `npm run dev`       | Starts local dev server at `localhost:3000`        |
-| `npm run build`     | Build your production site to `./dist/`            |
-| `npm run preview`   | Preview your build locally, before deploying       |
-| `npm run check`     | Check your project for errors                      |
-| `npm run fix`       | Run Eslint and format codes with Prettier          |
-| `npm run astro ...` | Run CLI commands like `astro add`, `astro preview` |
-
-<br>
-
-### Configuration
-
-Basic configuration file: `./src/config.yaml`
-
-```yaml
-site:
-  name: 'Example'
-  site: 'https://example.com'
-  base: '/' # Change this if you need to deploy to Github Pages, for example
-  trailingSlash: false # Generate permalinks with or without "/" at the end
-
-  googleSiteVerificationId: false # Or some value,
-
-# Default SEO metadata
-metadata:
-  title:
-    default: 'Example'
-    template: '%s — Example'
-  description: 'This is the default meta description of Example website'
-  robots:
-    index: true
-    follow: true
-  openGraph:
-    site_name: 'Example'
-    images:
-      - url: '~/assets/images/default.png'
-        width: 1200
-        height: 628
-    type: website
-  twitter:
-    handle: '@twitter_user'
-    site: '@twitter_user'
-    cardType: summary_large_image
-
-i18n:
-  language: en
-  textDirection: ltr
-
-apps:
-  blog:
-    isEnabled: true # If the blog will be enabled
-    postsPerPage: 6 # Number of posts per page
-
-    post:
-      isEnabled: true
-      permalink: '/blog/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
-      robots:
-        index: true
-
-    list:
-      isEnabled: true
-      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
-      robots:
-        index: true
-
-    category:
-      isEnabled: true
-      pathname: 'category' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
-      robots:
-        index: true
-
-    tag:
-      isEnabled: true
-      pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
-      robots:
-        index: false
-
-    isRelatedPostsEnabled: true # If a widget with related posts is to be displayed below each post
-    relatedPostsCount: 4 # Number of related posts to display
-
-analytics:
-  vendors:
-    googleAnalytics:
-      id: null # or "G-XXXXXXXXXX"
-
-ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
-```
-
-<br>
-
-#### Customize Design
-
-To customize Font families, Colors or more Elements refer to the following files:
-
-- `src/components/CustomStyles.astro`
-- `src/assets/styles/tailwind.css`
-
-### Deploy
-
-#### Deploy to production (manual)
-
-You can create an optimized production build with:
-
-```shell
-npm run build
-```
-
-Now, your website is ready to be deployed. All generated files are located at
-`dist` folder, which you can deploy the folder to any hosting service you
-prefer.
-
-#### Deploy to Netlify
-
-Clone this repository on your own GitHub account and deploy it to Netlify:
-
-[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/onwidget/astrowind)
-
-#### Deploy to Vercel
-
-Clone this repository on your own GitHub account and deploy to Vercel:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonwidget%2Fastrowind)
-
-<br>
-
-## Frequently Asked Questions
-
-- Why?
--
--
-
-<br>
-
-## Related projects
-
-- [TailNext](https://tailnext.vercel.app/) - Free template using Next.js 14 and Tailwind CSS with the new App Router.
-- [Qwind](https://qwind.pages.dev/) - Free template to make your website using Qwik + Tailwind CSS.
-
-## Contributing
-
-If you have any ideas, suggestions or find any bugs, feel free to open a discussion, an issue or create a pull request.
-That would be very useful for all of us and we would be happy to listen and take action.
-
-## Acknowledgements
-
-Initially created by [onWidget](https://onwidget.com) and maintained by a community of [contributors](https://github.com/onwidget/astrowind/graphs/contributors).
-
-## License
-
-**AstroWind** is licensed under the MIT license — see the [LICENSE](./LICENSE.md) file for details.
+1. [1] G. Tao, B. Garrett, T. Taverner, E. Cordingley, and C. Sun, “Immersive virtual reality health games: a narrative review of game design,” Journal of NeuroEngineering and Rehabilitation, vol. 18, no. 1, Feb. 2021, doi: 10.1186/s12984-020-00801-3. Available: https://jneuroengrehab.biomedcentral.com/articles/10.1186/s12984-020-00801-3
+2. Cybersickness in Virtual Reality: The Role of Individual Differences, Effects on Cognitive Functions & Motor Skills, and Intensity Differences during and after Immersion. (2023, October 1). ResearchGate. https://www.researchgate.net/publication/375075570_Cybersickness_in_Virtual_Reality_The_Role_of_Individual_Differences_Effects_on_Cognitive_Functions_Motor_Skills_and_Intensity_Differences_during_and_after_Immersion
+3. Cárdenas-Delgado, S., Loachamín-Valencia, M., Guanoluisa-Atiaga, P., & Monar-Mejía, X. (2021). A VR-System to Assess Stereopsis with Visual Stimulation: A Pilot Study of System Configuration. In Advances in intelligent systems and computing (pp. 328–342). https://doi.org/10.1007/978-3-030-68080-0_25
+4. Serafin, S., Adjorlu, A., & Percy-Smith, L. M. (2023). A Review of Virtual Reality for Individuals with Hearing Impairments. Multimodal Technologies and Interaction, 7(4), 36. https://doi.org/10.3390/mti7040036
+5. Leung, J., Wei, V., Burgess, M., & Carlile, S. (2016). Head tracking of Auditory, Visual, and Audio-Visual targets. Frontiers in Neuroscience, 9. https://doi.org/10.3389/fnins.2015.00493
+6. S. Viñas-Diz and M. Sobrido-Prieto, “Realidad virtual con fines terapéuticos en pacientes con ictus: revisión sistemática,” Neurología, vol. 31, no. 4, pp. 255–277, May 2016, doi: 10.1016/j.nrl.2015.06.012. Available: https://www.sciencedirect.com/science/article/pii/S0213485315001632
+7. Hendrikse, M. M. E., Llorach, G., Grimm, G., & Hohmann, V. (2019). Realistic audiovisual listening environments in the lab : analysis of movement behavior and consequences for hearing aids. https://publications.rwth-aachen.de/record/769578/files/769578.pdf
