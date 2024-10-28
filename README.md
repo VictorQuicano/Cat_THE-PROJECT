@@ -13,7 +13,8 @@
 - QUICAÑO MIRANDA, Victor Alejandro
 - RUIZ MAMANI, Eduardo
 
-> **Images y Videos de recopilación de información** 📸📝
+> ### **Images y Videos de recopilación de información** 📸📝
+>
 > Toda la evidencia está adjunta en los siguientes links:
 >
 > - [Entrevista con el experto 🕺](https://drive.google.com/drive/folders/1y3OUlDYjVbTAMSPifsSE2xzRGLdzRTKC?usp=drive_link)
