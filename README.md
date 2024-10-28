@@ -79,8 +79,6 @@ El proyecto busca desarrollar un juego interactivo e inmersivo en realidad virtu
    El juego podrá adaptarse automáticamente a diferentes tipos de usuarios. Para los jugadores casuales, ofrecerá rutinas fáciles de seguir mediante la posición de los gatos además divertido de seguir. Para los que tienen experiencia moderada en actividad física, se les dará una rutina accesible que no será demasiada desafiante. Por último, para aquellos que deseen un reto significativo, se les dará una rutina que ponga a prueba su resistencia.
 3. **Entrenamiento Basado en Realidad Virtual (RV)**
    Utilizar RV o RA para crear entornos temáticos (como una selva, el espacio o una ciudad virtual) donde los ejercicios se transforman en misiones o desafíos, haciendo que el entrenamiento sea más envolvente y entretenido.
-Retos Multijugador y Clasificaciones: Implementar un sistema de competencias en línea donde los usuarios puedan enfrentarse en desafíos de habilidad y resistencia, y acceder a una clasificación que los motive a mejorar su desempeño.
-Modos Cooperativos de Ejercicio: Permitir a los usuarios trabajar en equipo para superar retos específicos, como mantener un ritmo coordinado en grupo o lograr objetivos de movimientos sincronizados.
 4. **Feedback Multisensorial Avanzado**
    Incorporar vibraciones o respuestas táctiles en dispositivos de control (si está disponible) para simular sensaciones y mejorar la inmersión durante el juego. Además, el juego podría proporcionar sonidos 3D para ayudar en la sincronización de movimientos y mostrar indicaciones visuales para mejorar la precisión y control del movimiento.
 5. **Modos de Ejercicio para la Mejora de Psicmotricidad**
