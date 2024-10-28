@@ -1,4 +1,4 @@
-![Header_img](/public/imgs/header.jpg)
+![Header_img](/public/imgs/header.png)
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-crayons.svg)](https://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
