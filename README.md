@@ -86,6 +86,33 @@ Modos Cooperativos de Ejercicio: Permitir a los usuarios trabajar en equipo para
 5. **Modos de Ejercicio para la Mejora de Psicmotricidad**
    En este modo, los movimientos se enfocan en mejorar la coordinación mediante patrones simples y repetitivos, en lugar de coreografías complejas, ayudando a los usuarios a fortalecer la psicomotricidad.
 
+# ANÁLISIS DE SISTEMAS EXISTENTES
+
+## Just Dance
+
+Just Dance es una serie de videojuegos de ritmo. Este juego de baile basado en movimiento para varios jugadores, en el que cada canción tiene coreografías únicas, tanto clásicas como modernas. Durante cada canción, los jugadores imitan los movimientos de los bailarines en pantalla, siguiendo pictogramas en la esquina inferior derecha, y son calificados por su precisión. También existen "movimientos dorados" en los que deben realizar una pose o el movimiento más difícil para ganar puntos extra. Los jugadores reciben clasificaciones según su desempeño, y, según el juego y el sistema, se puede jugar con controladores de movimiento o dispositivos de cámara.
+
+### Aspectos Positivos
+
+1. **Accesible para Todas las Edades:**
+   Con un rango de canciones y coreografías adaptadas a diferentes edades y niveles de habilidad, es un juego accesible para todas las generaciones. Desde niños hasta adultos, cualquier persona puede disfrutarlo sin la necesidad de tener habilidades de baile avanzadas.
+2. **Estimula la Coordinación y la Memoria:**
+   Just Dance ayuda a mejorar la coordinación y memoria al seguir las coreografías y movimientos en pantalla. Esto es especialmente beneficioso para niños y personas mayores, ya que desarrolla sus habilidades motoras y su capacidad de concentración.
+3. **Ideal para Reuniones Sociales:**
+   Es una excelente opción para fiestas y reuniones, ya que permite que varias personas jueguen y compitan entre sí, promoviendo la socialización y creando momentos de diversión en grupo. También se puede jugar en línea, lo que une a personas de diferentes partes del mundo.
+4. **Variedad de Música y Cultura:**
+   Just Dance ofrece una diversidad de géneros musicales que van desde pop, rock y hip-hop hasta K-pop, música latina, y más. Esta variedad permite a los jugadores explorar diferentes culturas a través de la música y el baile.
+5. **Fortalece la Autoestima y Reduce el Estrés:**
+   Bailar es una actividad que genera endorfinas y reduce el estrés. Just Dance ayuda a los jugadores a liberar tensiones y mejorar su estado de ánimo. Además, superar niveles y recibir puntuaciones altas genera una sensación de logro que puede fortalecer la confianza.
+
+### Aspectos Negativos
+
+1. **Necesidad de Espacio Físico:**
+   Para jugar Just Dance correctamente, se necesita espacio para moverse sin chocar con objetos o personas. Esto puede ser un problema en espacios pequeños o en hogares con muebles u objetos que dificulten la movilidad segura.
+
+2. **Problemas de Detección de Movimiento:**
+   Dependiendo de la consola o dispositivo, la precisión en la detección de los movimientos no siempre es perfecta. En algunos sistemas, el juego solo detecta los movimientos del brazo que sostiene el controlador (como en Nintendo Switch o Wii), lo que puede ser frustrante para quienes intentan seguir la coreografía completa.
+
 # BIBLIOGRAFÍA
 
 1. [1] G. Tao, B. Garrett, T. Taverner, E. Cordingley, and C. Sun, “Immersive virtual reality health games: a narrative review of game design,” Journal of NeuroEngineering and Rehabilitation, vol. 18, no. 1, Feb. 2021, doi: 10.1186/s12984-020-00801-3. Available: https://jneuroengrehab.biomedcentral.com/articles/10.1186/s12984-020-00801-3
