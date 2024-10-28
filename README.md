@@ -71,6 +71,21 @@ Este juego está diseñado para adaptarse a una amplia variedad de usuarios con 
 
 El proyecto busca desarrollar un juego interactivo e inmersivo en realidad virtual (VR) que combine entretenimiento con el incentivo a la actividad física en un ambiente cómodo y sin presiones. A través de mecánicas accesibles y entretenidas, los usuarios deberán defender la Tierra de una invasión de gatitos alienígenas, guiándose por estímulos auditivos tridimensionales y utilizando su coordinación para localizar y "golpear" a los gatitos que se acercan desde diferentes direcciones en un entorno de 360 grados.
 
+# Funcionalidades Innovadoras
+
+1. **Interfaz Interactiva e Intuitiva en Realidad Virtual**
+   El entorno virtual será completamente inmersivo, diseñado con una interfaz interactiva, donde el jugador estará rodeado por un mundo visual que responde a sus movimientos y acciones. Los gatitos aparecerán en diferentes puntos del espacio a través de un sistema de detección tridimensional, y los jugadores deberán moverse y girar constantemente para interceptar los ataques, siguiendo el ritmo que marcan los sonidos.
+2. **Adaptación a Diferentes Usuarios**
+   El juego podrá adaptarse automáticamente a diferentes tipos de usuarios. Para los jugadores casuales, ofrecerá rutinas fáciles de seguir mediante la posición de los gatos además divertido de seguir. Para los que tienen experiencia moderada en actividad física, se les dará una rutina accesible que no será demasiada desafiante. Por último, para aquellos que deseen un reto significativo, se les dará una rutina que ponga a prueba su resistencia.
+3. **Entrenamiento Basado en Realidad Virtual (RV)**
+   Utilizar RV o RA para crear entornos temáticos (como una selva, el espacio o una ciudad virtual) donde los ejercicios se transforman en misiones o desafíos, haciendo que el entrenamiento sea más envolvente y entretenido.
+Retos Multijugador y Clasificaciones: Implementar un sistema de competencias en línea donde los usuarios puedan enfrentarse en desafíos de habilidad y resistencia, y acceder a una clasificación que los motive a mejorar su desempeño.
+Modos Cooperativos de Ejercicio: Permitir a los usuarios trabajar en equipo para superar retos específicos, como mantener un ritmo coordinado en grupo o lograr objetivos de movimientos sincronizados.
+4. **Feedback Multisensorial Avanzado**
+   Incorporar vibraciones o respuestas táctiles en dispositivos de control (si está disponible) para simular sensaciones y mejorar la inmersión durante el juego. Además, el juego podría proporcionar sonidos 3D para ayudar en la sincronización de movimientos y mostrar indicaciones visuales para mejorar la precisión y control del movimiento.
+5. **Modos de Ejercicio para la Mejora de Psicmotricidad**
+   En este modo, los movimientos se enfocan en mejorar la coordinación mediante patrones simples y repetitivos, en lugar de coreografías complejas, ayudando a los usuarios a fortalecer la psicomotricidad.
+
 # BIBLIOGRAFÍA
 
 1. [1] G. Tao, B. Garrett, T. Taverner, E. Cordingley, and C. Sun, “Immersive virtual reality health games: a narrative review of game design,” Journal of NeuroEngineering and Rehabilitation, vol. 18, no. 1, Feb. 2021, doi: 10.1186/s12984-020-00801-3. Available: https://jneuroengrehab.biomedcentral.com/articles/10.1186/s12984-020-00801-3
