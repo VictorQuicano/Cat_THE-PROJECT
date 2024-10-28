@@ -41,12 +41,18 @@ Desarrollar un juego interactivo e inmersivo, capaz de brindar una verdadera int
 
 ## Objetivos Específicos
 
-- Implementar un sistema de sonido 3D inmersivo que permita a los jugadores identificar la dirección de los enemigos virtuales mediante estímulos auditivos, mejorando su capacidad de reacción y reflejos.
-- Desarrollar una mecánica de juego basada en ritmo y precisión donde los jugadores deban golpear a los enemigos al ritmo adecuado, utilizando tanto estímulos visuales como auditivos.
-- Integrar herramientas de seguimiento y análisis que permitan medir la capacidad de respuesta de los jugadores a los estímulos sensoriales, generando datos útiles para la evaluación médica.
-- Crear un entorno amigable y no invasivo que pueda ser utilizado para evaluar problemas auditivos y de percepción visual, como la estereopsis, de forma efectiva en pacientes pediátricos o en personas con dificultades de percepción.
-- Adaptar el juego para diferentes públicos, permitiendo que sea utilizado tanto por jugadores casuales como por profesionales de la salud que deseen evaluar las capacidades sensoriales de sus pacientes.
-- Explorar el impacto del juego en la mejora de reflejos y coordinación a través del seguimiento de los progresos de los usuarios, proporcionando datos útiles para investigaciones futuras en medicina computacional y rehabilitación.
+### Objetivos Específicos
+
+1. **Implementar un sistema de sonido 3D inmersivo:** Que permita a los usuarios guiarse por estímulos auditivos durante la actividad física, creando una experiencia más envolvente y ayudando a que cada movimiento esté en sincronía con el entorno virtual.
+
+2. **Desarrollar mecánicas de juego basadas en ritmo y precisión:** Donde los usuarios deban realizar movimientos coordinados al ritmo adecuado, utilizando tanto estímulos visuales como auditivos que incentiven la actividad física de manera entretenida y sin complejidad técnica.
+
+3. **Crear un entorno accesible y motivador:** Que elimine las barreras para la actividad física, permitiendo que usuarios de distintos niveles de habilidad puedan disfrutar de un entrenamiento desde la comodidad de su hogar sin sentirse presionados o juzgados.
+
+4. **Adaptar el juego para diferentes niveles de habilidad:** Para que pueda ser utilizado por principiantes que buscan diversión y aprendizaje, personas con algo de experiencia en baile o ejercicio, y expertos que desean un desafío físico y mental. Esto incluye la elaboración de diferentes coreografías monitoreadas por un experto en el tema.
+
+6. **Monitorear el impacto del juego en la mejora de la coordinación y la psicomotricidad:** Mediante el seguimiento del progreso individual de los usuarios, proporcionando información útil para el desarrollo de futuras aplicaciones de entrenamiento y rehabilitación en el ámbito de la salud y el bienestar físico.
+
 
 # Publico Objetivo
 
