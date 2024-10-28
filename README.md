@@ -8,17 +8,22 @@
 [![CI](https://github.com/athityakumar/colorls/actions/workflows/ruby.yml/badge.svg)](https://github.com/athityakumar/colorls/actions/workflows/ruby.yml)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=shields)](http://makeapullrequest.com)
 
-# Integrantes
+# Integrantes 🤖
 
 - QUICAÑO MIRANDA, Victor Alejandro
 - RUIZ MAMANI, Eduardo
 
-# Introducción
+> **Images y Videos de recopilación de información** 📸📝
+> Toda la evidencia está adjunta en los siguientes links:
+>
+> - [Entrevista con el experto 🕺](https://drive.google.com/drive/folders/1y3OUlDYjVbTAMSPifsSE2xzRGLdzRTKC?usp=drive_link)
+
+# Introducción 🐈
 
 En el ámbito de la nutrición y el deporte de alto rendimiento, la necesidad de un seguimiento preciso y personalizado es fundamental para optimizar los resultados de los atletas. La cantidad y calidad de los datos que un especialista puede recolectar, analizar y utilizar para ajustar programas de alimentación y entrenamiento puede marcar una diferencia significativa en el desempeño deportivo. Por ello, hemos desarrollado una interfaz especializada que permite a nutricionistas y entrenadores generar reportes específicos y cronológicos basados en las necesidades individuales de sus clientes.
 Esta herramienta automatiza y organiza la gestión de datos, aplicando fórmulas personalizadas que permiten un análisis detallado y eficiente. Además, facilita la creación de documentos que registran el progreso y la evolución de los atletas, lo que a su vez proporciona un recurso valioso para ajustes precisos en tiempo real. Con esta interfaz, los especialistas podrán mejorar la precisión de sus recomendaciones, al mismo tiempo que optimizan su tiempo y recursos.Te va acostr
 
-# Plantemaiento del problema
+# Plantemaiento del problema 🦺
 
 El problema que esta interfaz busca solucionar es la gestión compleja y el análisis eficiente de grandes cantidades de datos que los nutricionistas y entrenadores de alto rendimiento manejan a diario. Muchos especialistas todavía dependen de métodos manuales o de herramientas genéricas que no están pensadas específicamente para las necesidades de los deportistas, lo que puede llevar a errores en el seguimiento y las recomendaciones personalizadas.
 
