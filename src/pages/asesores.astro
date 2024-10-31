@@ -1,0 +1,65 @@
+---
+import type { InferGetStaticPropsType, GetStaticPaths } from 'astro';
+
+import Layout from '~/layouts/PageLayout.astro';
+import Headline from '~/components/blog/Headline.astro';
+// import PostTags from "~/components/blog/Tags.astro";
+
+export const prerender = true;
+
+// const allCategories = await findCategories();
+// const allTags = await findTags();
+
+const metadata = {
+  title: 'Nuestros Asesores',
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="px-6 sm:px-6 py-12 sm:py-16 lg:py-20 mx-auto max-w-4xl">
+    <Headline
+      subtitle="Buscamos la opinión, validación y retroalimentación de expertos en el área del baile y la actividad física."
+    >
+      Nuestros Asesores
+    </Headline>
+    <div class="flex flex-col justify-center items-center">
+      <h1 class="text-6xl font-bold text-center">Entrevistas con el experto</h1>
+      <p class="text-gray-500 text-center mt-2 mb-4">
+        Jefferson es profesor de baile certificado con 20 años de experiencia, actualmente trabaja como asesor de Revo
+        Sport y profesor particular.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <div
+          class="w-full flex flex-col justify-center items-center border border-[#111111] bg-[#292929] rounded-lg max-w-fit"
+        >
+          <iframe
+            src="https://drive.google.com/file/d/1IqbLwOPwFLPkLQ1QOj8mu1xjTMi_c4uZ/preview"
+            allow="autoplay"
+            class="rounded-lg"></iframe>
+          <h4 class="hover:underline mt-0">Primera Parte</h4>
+        </div>
+        <div
+          class="w-full flex flex-col justify-center items-center border border-[#111111] bg-[#292929] rounded-lg max-w-fit"
+        >
+          <iframe src="https://drive.google.com/file/d/1jIauIWfCTQlSlTF9t4QZlBO1MNn87xey/preview" allow="autoplay"
+          ></iframe>
+          <h4 class="hover:underline mt-0">Segunda Parte</h4>
+        </div>
+
+        <div
+          class="w-full flex flex-col justify-center items-center border border-[#111111] bg-[#292929] rounded-lg max-w-fit"
+        >
+          <iframe src="https://drive.google.com/file/d/1SlmDT5pBOInFPOJ0DNVevjNCC6dRgDot/preview" allow="autoplay"
+          ></iframe>
+          <h4 class="hover:underline mt-0">Tercera Parte</h4>
+        </div>
+      </div>
+    </div>
+    <!--
+            <BlogList posts={page.data} />
+            <Pagination prevUrl={page.url.prev} nextUrl={page.url.next} />
+      <PostTags tags={allCategories} class="mb-2" title="Search by Categories:" isCategory />
+      <PostTags tags={allTags}  title="Search by Tags:" />
+    -->
+  </section>
+</Layout>
