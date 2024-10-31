@@ -3,25 +3,27 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Homes',
+      text: 'Sobre el proyecto',
+      href: getPermalink('/about'),
+      /*
       links: [
         {
           text: 'SaaS',
-          href: getPermalink('/homes/saas'),
+          href: getPermalink('/about/saas'),
         },
         {
           text: 'Startup',
-          href: getPermalink('/homes/startup'),
+          href: getPermalink('/about/startup'),
         },
         {
           text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
+          href: getPermalink('/about/mobile-app'),
         },
         {
           text: 'Personal',
-          href: getPermalink('/homes/personal'),
+          href: getPermalink('/about/personal'),
         },
-      ],
+      ],*/
     },
     {
       text: 'Pages',
@@ -115,7 +117,9 @@ export const headerData = {
       href: '#',
     },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  actions: [
+    { text: 'Ver el repositorio', href: 'https://github.com/VictorQuicano/Final_Cut-The-Cat', target: '_blank' },
+  ],
 };
 
 export const footerData = {
@@ -166,8 +170,8 @@ export const footerData = {
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: 'Términos y Condiciones', href: getPermalink('/') },
+    { text: 'Políticas de Privacidad', href: getPermalink('/') },
   ],
   socialLinks: [
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },

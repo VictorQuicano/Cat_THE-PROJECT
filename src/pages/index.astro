@@ -4,14 +4,15 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
+//import Features2 from '~/components/widgets/Features2.astro';
 //import Steps from '~/components/widgets/Steps.astro';
 //import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
+//import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+//import FAQs from '~/components/widgets/FAQs.astro';
+//import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import TitleGradient from '~/components/ui/TitleGradient.astro';
+import { Image } from 'astro:assets';
 
 const metadata = {
   title: 'Conoce más de Cut The Cat',
@@ -33,7 +34,7 @@ const metadata = {
       },
       { text: 'Learn more', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/hero-image-2.png', alt: 'Astro with cats' }}
+    image={{ src: '~/assets/images/hero-image-2.png', alt: 'Astro with cats', class: 'pulse' }}
   >
     <Fragment slot="title">
       <TitleGradient text="CUT THE CAT" subtitle="¡Defiende la tierra con estilo!" />
@@ -51,6 +52,90 @@ const metadata = {
   <Note />
 
   <!-- Features Widget *************** -->
+
+  <div class="bg-[#111111] w-full py-10 px-4 flex flex-wrap justify-center items-center gap-8">
+    <div class="w-full">
+      <h3 class="w-full text-4xl font-bold uppercase text-center">🛡️ Desarrollado por 💻</h3>
+      <h3 class="w-full text-gray-400 text-xl font-semibold text-center">De los mismo que jugaron LOL</h3>
+    </div>
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <a href="#">
+        <img
+          class="rounded-t-lg max-h-[280px] min-w-full object-cover"
+          src="https://scontent.faqp2-3.fna.fbcdn.net/v/t1.6435-9/127757655_3683581275038794_8258248733737655190_n.jpg?stp=dst-jpg_tt7&_nc_cat=100&cb=99be929b-defccdb7&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeEr9Durshh9Nt6vaONcRjr_a-qq09D3ut1r6qrT0Pe63Uhs0-6RGSOR7K_nCOhwAXi23-wLAysrot3RdNwYpXlo&_nc_ohc=_YDtm1LUVy4Q7kNvgGAPNWl&_nc_zt=23&_nc_ht=scontent.faqp2-3.fna&_nc_gid=AE0dxX3Or74BGuCFrqP9yXM&oh=00_AYAZDZGt_qi0gaRUXo3xx_JQRqgODlKe0LEECXLPtmPp2g&oe=674A9C79"
+          alt="Alejandro Quicaño"
+        />
+      </a>
+      <div class="p-5">
+        <a href="#">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Victor Quicaño</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          Estudiante de Ciencia de la Computacion, desarrollador full-stack y QA.
+        </p>
+        <a
+          href="https://github.com/VictorQuicano"
+          class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >
+          Github
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            width="24"
+            height="24"
+            stroke-width="2"
+          >
+            <path d="M8 9l3 3l-3 3"></path>
+            <path d="M13 15l3 0"></path>
+            <path d="M3 4m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <a href="#">
+        <img
+          class="rounded-t-lg max-h-[280px] min-w-full object-cover"
+          src="https://scontent.faqp2-1.fna.fbcdn.net/v/t39.30808-6/342998210_1386099488908230_1366575499071520942_n.jpg?stp=dst-jpg_tt7&_nc_cat=110&cb=99be929b-defccdb7&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeE1-IPBwgIgXYp6WVJdTLVo5gtCX0sRTP3mC0JfSxFM_Z49Buk3zzsFutDG8KRrih1FrMaV9d2uA0OqD_WNpFTu&_nc_ohc=WTteVxU9KzYQ7kNvgEANx4J&_nc_zt=23&_nc_ht=scontent.faqp2-1.fna&_nc_gid=AHoy9kYyWixBwx_PwLJ9EAB&oh=00_AYDheF1PqGRoah2hoGLTh0vfPOu3jgNgQnCJnIoktYrwvQ&oe=67292426"
+          alt="Eduardo Ruiz"
+        />
+      </a>
+      <div class="p-5">
+        <a href="#">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Eduardo Ruiz</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          Estudiante de Ciencia de la Computacion, desarrollador full-stack y experto en UI/UX.
+        </p>
+        <a
+          href="https://github.com/EGRM23"
+          class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+        >
+          Github
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            width="24"
+            height="24"
+            stroke-width="2"
+          >
+            <path d="M8 9l3 3l-3 3"></path>
+            <path d="M13 15l3 0"></path>
+            <path d="M3 4m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
 
   <Features
     id="features"
@@ -241,6 +326,7 @@ const metadata = {
   -->
   <!-- Features2 Widget ************** -->
 
+  <!---
   <Features2
     title="Most used widgets"
     subtitle="Provides frequently used components for building websites using Tailwind CSS"
@@ -302,9 +388,9 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Features2>
-
+    -->
   <!-- HighlightedPosts Widget ******* -->
-
+  <!--
   <BlogLatestPosts
     title="Find out more content in our Blog"
     information={`The blog is used to display AstroWind documentation.
@@ -312,9 +398,10 @@ const metadata = {
                         Astro is a very interesting technology. Thanks.
                 `}
   />
+   -->
 
   <!-- FAQs Widget ******************* -->
-
+  <!--
   <FAQs
     title="Frequently Asked Questions"
     subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
@@ -353,9 +440,10 @@ const metadata = {
       },
     ]}
   />
-
+   -->
   <!-- Stats Widget ****************** -->
 
+  <!--
   <Stats
     stats={[
       { title: 'Downloads', amount: '132K' },
@@ -364,6 +452,7 @@ const metadata = {
       { title: 'Users', amount: '48.4K' },
     ]}
   />
+  -->
 
   <!-- CallToAction Widget *********** -->
 
@@ -371,20 +460,17 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'Mira un poco de nuestro código',
+        href: 'https://github.com/VictorQuicano/Final_Cut-The-Cat',
         target: '_blank',
         icon: 'tabler:download',
       },
     ]}
   >
-    <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
-    </Fragment>
+    <Fragment slot="title"> ¿Cómo lo hicimos? </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Con mucho amor, esfuerzo, consultas a expertos. <br class="hidden md:inline" />Y usando unity.
     </Fragment>
   </CallToAction>
 </Layout>
