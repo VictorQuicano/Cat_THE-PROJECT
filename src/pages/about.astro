@@ -2,7 +2,7 @@
 import Features2 from '~/components/widgets/Features2.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import Hero from '~/components/widgets/Hero.astro';
-import Stats from '~/components/widgets/Stats.astro';
+//import Stats from '~/components/widgets/Stats.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
@@ -15,113 +15,80 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="About us"
+    tagline="Cómo surge el proyecto"
     image={{
-      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      src: '~/assets/images/PrimerosTest.png',
       alt: 'Caos Image',
     }}
   >
     <Fragment slot="title">
-      Elevate your online presence with our <br />
-      <span class="text-accent dark:text-white highlight"> Beautiful Website Templates</span>
-    </Fragment>
-
-    <Fragment slot="subtitle">
-      Donec efficitur, ipsum quis congue luctus, mauris magna convallis mauris, eu auctor nisi lectus non augue. Donec
-      quis lorem non massa vulputate efficitur ac at turpis. Sed tincidunt ex a nunc convallis, et lobortis nisi tempus.
-      Suspendisse vitae nisi eget tortor luctus maximus sed non lectus.
+      BUSCAMOS UN CREAR UN JUEGO QUE TE AYUDE A SER FIT MIENTRAS TE DIVIERTES<br />
+      <a
+        href="https://github.com/VictorQuicano/Cat_THE-PROJECT/blob/main/Proyecto%20HCI%20(Dance).pdf"
+        class="hover:cursor-pointer font-semibold text-base tracking-wide underline text-gray-400 hover:text-gray-600"
+        ><h2>[Documento para nerds]</h2></a
+      >
     </Fragment>
   </Hero>
 
-  <!-- Stats Widget ****************** -->
+  <Fragment slot="subtitle">
+    La falta de motivación y ver el ejercicio, aún más el baile, como una obligación hacen que muchos lo abandonen. Hace
+    falta encontrar formas más entretenidas y frescas que vuelvan el ejercicio algo motivador y constante.
+  </Fragment>
 
-  <Stats
+  <!-- Stats Widget ****************** -->
+  <!--
+    <Stats
     title="Statistics about us"
     stats={[
-      { title: 'Offices', amount: '4' },
-      { title: 'Employees', amount: '248' },
-      { title: 'Templates', amount: '12' },
-      { title: 'Awards', amount: '24' },
+    { title: 'Offices', amount: '4' },
+    { title: 'Employees', amount: '248' },
+    { title: 'Templates', amount: '12' },
+    { title: 'Awards', amount: '24' },
     ]}
-  />
+    />
+    -->
 
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Our templates"
-    subtitle="Etiam scelerisque, enim eget vestibulum luctus, nibh mauris blandit nulla, nec vestibulum risus justo ut enim. Praesent lacinia diam et ante imperdiet euismod."
-    columns={3}
+    title="NUESTRO OBJETIVO"
+    subtitle="Crear un videojuego que convierta el ejercicio en una experiencia inmersiva y divertida, motivando a los usuarios a mantenerse activos sin rutina.."
+    columns={2}
     isBeforeContent={true}
     items={[
       {
-        title: 'Educational',
+        title: 'Personas con interés en el entretenimiento',
         description:
-          'Morbi faucibus luctus quam, sit amet aliquet felis tempor id. Cras augue massa, ornare quis dignissim a, molestie vel nulla.',
+          'Usuarios que buscan diversión y una experiencia de juego relajada sin presiones de ejercicio. El juego será sencillo, accesible y centrado en la diversión.',
         icon: 'tabler:template',
       },
       {
-        title: 'Interior Design',
+        title: 'Usuarios con interés moderado en actividad física',
         description:
-          'Vivamus porttitor, tortor convallis aliquam pretium, turpis enim consectetur elit, vitae egestas purus erat ac nunc nulla.',
+          'Personas conscientes de los beneficios del ejercicio que desean mantenerse activos. El juego combinará actividad física y entretenimiento, con una dificultad accesible y no tan exigente como una rutina de gimnasio.',
         icon: 'tabler:template',
       },
       {
-        title: 'Photography',
+        title: 'Usuarios que buscan desafíos físicos intensos',
         description:
-          'Duis sed lectus in nisl vehicula porttitor eget quis odio. Aliquam erat volutpat. Nulla eleifend nulla id sem fermentum.',
-        icon: 'tabler:template',
-      },
-    ]}
-  />
-
-  <!-- Features3 Widget ************** -->
-
-  <Features3
-    columns={3}
-    isAfterContent={true}
-    items={[
-      {
-        title: 'E-commerce',
-        description:
-          'Rutrum non odio at vehicula. Proin ipsum justo, dignissim in vehicula sit amet, dignissim id quam. Sed ac tincidunt sapien.',
+          'Usuarios con experiencia en ejercicio o baile que buscan un reto físico para mejorar su resistencia y habilidades. Se les ofrecerán niveles avanzados y desafíos adaptados a sus capacidades.',
         icon: 'tabler:template',
       },
       {
-        title: 'Blog',
+        title: 'Personas con interés en mejorar la psicomotricidad',
         description:
-          'Nullam efficitur volutpat sem sed fringilla. Suspendisse et enim eu orci volutpat laoreet ac vitae libero.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Business',
-        description:
-          'Morbi et elit finibus, facilisis justo ut, pharetra ipsum. Donec efficitur, ipsum quis congue luctus, mauris magna.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Branding',
-        description:
-          'Suspendisse vitae nisi eget tortor luctus maximus sed non lectus. Cras malesuada pretium placerat. Nullam venenatis dolor a ante rhoncus.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Medical',
-        description:
-          'Vestibulum malesuada lacus id nibh posuere feugiat. Nam volutpat nulla a felis ultrices, id suscipit mauris congue. In hac habitasse platea dictumst.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Fashion Design',
-        description:
-          'Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus.',
+          'Usuarios que prefieren una actividad de baja intensidad, enfocada en movimientos específicos para mejorar la coordinación y habilidades motoras, sin demandar un esfuerzo físico elevado.',
         icon: 'tabler:template',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+      src: '~/assets/images/vr_image.png',
       alt: 'Colorful Image',
     }}
   />
+
+  <!-- Features3 Widget ************** -->
 
   <!-- Steps2 Widget ****************** -->
 

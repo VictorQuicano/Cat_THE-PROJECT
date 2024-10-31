@@ -1,9 +1,9 @@
 ---
 publishDate: 2023-08-12T00:00:00Z
 author: John Smith
-title: Get started with AstroWind to create a website using Astro and Tailwind CSS
-excerpt: Start your web journey with AstroWind – harness Astro and Tailwind CSS for a stunning site. Explore our guide now.
-image: https://images.unsplash.com/photo-1516996087931-5ae405802f9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80
+title: Entrevista con el Jefferson
+excerpt: Jefferson es profesor de danza certificaco con 20 años de experiencia .
+image: https://mercadofitness.com/wp-content/uploads/2023/07/Revo-Sport-abre-su-sexto-gimnasio-en-Arequipa-Peru-scaled-e1688568367647-2048x1021.jpg
 category: Tutorials
 tags:
   - astro
@@ -13,6 +13,32 @@ metadata:
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+<div class="py-20 flex-coljustify-center items-center gap-4">
+    <h1 class="text-6xl font-bold text-center col-span-3 text-cyan-700">Entrevistas con el experto</h1>
+    <div class="w-full flex flex-row justify-center items-center gap-5 border border border-[#111111] bg-[#292929] rounded-lg p-4 max-w-fit">
+      <div class="flex flex-col items-center">
+        <iframe
+          src="https://drive.google.com/file/d/1IqbLwOPwFLPkLQ1QOj8mu1xjTMi_c4uZ/preview"
+          allow="autoplay"
+          class="rounded-lg"
+        ></iframe>
+        <h4 class="hover:underline mt-0">Primera Parte</h4>
+      </div>
+    </div>
+    <div class="w-full flex flex-wrap justify-center items-center gap-5 border border border-[#111111] bg-[#292929] rounded-lg p-4 max-w-fit">
+      <div class="flex flex-col items-center">
+        <iframe src="https://drive.google.com/file/d/1jIauIWfCTQlSlTF9t4QZlBO1MNn87xey/preview" allow="autoplay"></iframe>
+        <h4 class="hover:underline mt-0">Segunda Parte</h4>
+      </div>
+    </div>
+    <div class="w-full flex flex-wrap justify-center items-center gap-5 border border border-[#111111] bg-[#292929] rounded-lg p-4 max-w-fit">
+      <div class="flex flex-col items-center">
+        <iframe src="https://drive.google.com/file/d/1SlmDT5pBOInFPOJ0DNVevjNCC6dRgDot/preview" allow="autoplay"></iframe>
+        <h4 class="hover:underline mt-0">Tercera Parte</h4>
+      </div>
+    </div>
+</div>
 
 ## Nostra torquent consequat volutpat aliquet neque
 
