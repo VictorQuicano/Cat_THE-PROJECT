@@ -5,6 +5,12 @@ export const headerData = {
     {
       text: 'Inicio',
       href: getPermalink('/'),
+      links: [
+        {
+          text: 'Más info',
+          href: getPermalink('/para-nerds'),
+        },
+      ],
     },
     {
       text: 'Conoce más',
@@ -94,6 +100,12 @@ export const headerData = {
     {
       text: 'Asesores',
       href: getPermalink('/asesores'),
+      links: [
+        {
+          text: 'Momentos Interesantes',
+          href: getPermalink('/momentos-interesantes'),
+        },
+      ],
     },
   ],
   actions: [

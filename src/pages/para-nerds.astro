@@ -8,46 +8,73 @@ import Features3 from '~/components/widgets/Features3.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Pricing',
+  title: 'Información para nerds',
 };
+
+const biblio = [
+  {
+    title: 'The use of virtual reality to influence motivation, affect, enjoyment, and engagement during exercise',
+    description:
+      'Mouatt, B., Smith, A. E., Mellow, M. L., Parfitt, G., Smith, R. T., & Stanton, T. R. (2020). The use of virtual reality to influence motivation, affect, enjoyment, and engagement during exercise: A scoping review. Frontiers in Virtual Reality',
+    link: 'https://doi.org/10.3389/frvir.2020.564664',
+  },
+  {
+    title: 'Attractiveness of game elements',
+    description:
+      'Qin, Y. (2021). Attractiveness of game elements, presence, and enjoyment of mobile augmented reality games: The case of Pokémon Go. Telematics and Informatics, 62, 101620',
+    link: 'https://doi.org/10.1016/j.tele.2021.101620',
+  },
+  {
+    title: 'The bright and dark sides of motivation as predictors of enjoyment, intention, and exercise persistence.',
+    description:
+      'Rodrigues, F., Teixeira, D. S., Neiva, H. P., Cid, L., & Monteiro, D. (2019). The bright and dark sides of motivation as predictors of enjoyment, intention, and exercise persistence. Scandinavian Journal of Medicine and Science in Sports, 30(4), 787–800',
+    link: 'https://doi.org/10.1111/sms.13617',
+  },
+  {
+    title: 'Small-Sided Games are More Enjoyable Than High-Intensity Interval Training of Similar Exercise Intensity',
+    description:
+      'Selmi, O., Ouergui, I., Levitt, D. E., Nikolaidis, P. T., Knechtle, B., & Bouassida, A. (2020). Small-Sided Games are More Enjoyable Than High-Intensity Interval Training of Similar Exercise Intensity in Soccer Open Access Journal of Sports Medicine, Volume 11, 77–84',
+    link: 'https://doi.org/10.2147/oajsm.s244512',
+  },
+];
 ---
 
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
   <HeroText
-    tagline="Pricing"
-    title="Stellar Pricing for Every Journey"
-    subtitle="Choose the perfect plan that aligns with your cosmic goals."
+    tagline="Conoce más"
+    title="Información para nerds"
+    subtitle="Bibliografía y datos que ayudarán a fundamentar y entnder mejor este proyecto."
   />
 
-  <!-- Pricing Widget ******************* -->
-
+  <!-- Pricing Widget *******************
+  
   <Prices
-    title="Our prices"
-    subtitle="Only pay for what you need"
-    prices={[
-      {
-        title: 'basic',
-        subtitle: 'Optimal choice for personal use',
-        price: 29,
-        period: 'per month',
-        items: [
-          {
-            description: 'Etiam in libero, et volutpat',
+  title="Our prices"
+  subtitle="Only pay for what you need"
+  prices={[
+  {
+    title: 'basic',
+    subtitle: 'Optimal choice for personal use',
+    price: 29,
+    period: 'per month',
+    items: [
+    {
+      description: 'Etiam in libero, et volutpat',
+    },
+    {
+      description: 'Aenean ac nunc dolor tristique',
+    },
+    {
+      description: 'Cras scelerisque accumsan lib',
+    },
+    {
+      description: 'In hac habitasse',
           },
-          {
-            description: 'Aenean ac nunc dolor tristique',
-          },
-          {
-            description: 'Cras scelerisque accumsan lib',
-          },
-          {
-            description: 'In hac habitasse',
-          },
-        ],
-        callToAction: {
-          target: '_blank',
+          ],
+          callToAction: {
+            target: '_blank',
           text: 'Get started',
           href: '#',
         },
@@ -58,21 +85,21 @@ const metadata = {
         price: 69,
         period: 'Per Month',
         items: [
-          {
-            description: 'Proin vel laoreet',
-          },
-          {
-            description: 'Ut efficitur habitasse egestas',
-          },
-          {
-            description: 'Volutpat hac curabitur',
-          },
-          {
-            description: 'Pellentesque blandit ut nibh',
-          },
-          {
-            description: 'Donec fringilla sem',
-          },
+        {
+          description: 'Proin vel laoreet',
+        },
+        {
+          description: 'Ut efficitur habitasse egestas',
+        },
+        {
+          description: 'Volutpat hac curabitur',
+        },
+        {
+          description: 'Pellentesque blandit ut nibh',
+        },
+        {
+          description: 'Donec fringilla sem',
+        },
         ],
         callToAction: {
           target: '_blank',
@@ -88,18 +115,18 @@ const metadata = {
         price: 199,
         period: 'Per Month',
         items: [
-          {
-            description: 'Curabitur suscipit risus',
-          },
-          {
-            description: 'Aliquam habitasse malesuada',
-          },
-          {
-            description: 'Suspendisse sit amet blandit',
-          },
-          {
-            description: 'Suspendisse auctor blandit dui',
-          },
+        {
+          description: 'Curabitur suscipit risus',
+        },
+        {
+          description: 'Aliquam habitasse malesuada',
+        },
+        {
+          description: 'Suspendisse sit amet blandit',
+        },
+        {
+          description: 'Suspendisse auctor blandit dui',
+        },
         ],
         callToAction: {
           target: '_blank',
@@ -107,9 +134,10 @@ const metadata = {
           href: '#',
         },
       },
-    ]}
-  />
+      ]}
+      />
 
+    -->
   <!-- Features3 Widget ************** -->
 
   <Features3
@@ -157,38 +185,10 @@ const metadata = {
     title="A guided journey from plans to creativity"
     tagline="simplified process"
     isReversed={true}
-    items={[
-      {
-        title: 'Explore plans',
-        icon: 'tabler:number-1',
-      },
-      {
-        title: 'Select a plan',
-        icon: 'tabler:number-2',
-      },
-      {
-        title: 'Sign Up / Log In',
-        icon: 'tabler:number-3',
-      },
-      {
-        title: 'Review order',
-        icon: 'tabler:number-4',
-      },
-      {
-        title: 'Enter payment details',
-        icon: 'tabler:number-5',
-      },
-      {
-        title: 'Confirmation',
-        icon: 'tabler:number-6',
-      },
-      {
-        title: 'Download and start using the template(s)',
-        icon: 'tabler:number-7',
-      },
-    ]}
+    items={biblio}
+    numberList
     image={{
-      src: 'https://images.unsplash.com/photo-1536816579748-4ecb3f03d72a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      src: 'https://media1.tenor.com/m/KyLkCcKPaa8AAAAC/cat-reading.gif',
       alt: 'Steps image',
     }}
   />

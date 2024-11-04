@@ -7,9 +7,10 @@ export interface Props {
   items?: Array<Item>;
   defaultIcon?: string;
   classes?: Record<string, string>;
+  numberList?: boolean;
 }
 
-const { items = [], classes = {}, defaultIcon } = Astro.props as Props;
+const { items = [], classes = {}, defaultIcon, numberList } = Astro.props as Props;
 
 const {
   container: containerClass = '',
@@ -23,7 +24,7 @@ const {
 {
   items && items.length && (
     <div class={containerClass}>
-      {items.map(({ title, description, icon, classes: itemClasses = {} }, index = 0) => (
+      {items.map(({ title, description, icon, classes: itemClasses = {}, link }, index = 0) => (
         <div
           class={twMerge(
             'flex intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade',
@@ -34,10 +35,15 @@ const {
           <div class="flex flex-col items-center mr-4 rtl:mr-0 rtl:ml-4">
             <div>
               <div class="flex items-center justify-center">
-                {(icon || defaultIcon) && (
+                {(icon || defaultIcon || numberList) && (
                   <Icon
-                    name={icon || defaultIcon}
-                    class={twMerge('w-10 h-10 p-2 rounded-full border-2', defaultIconClass, itemClasses?.icon)}
+                    name={icon || defaultIcon || 'tabler:number-' + (index + 1)}
+                    class={twMerge(
+                      'w-10 h-10 p-2 rounded-full border-2',
+                      defaultIconClass,
+                      itemClasses?.icon,
+                      'tabler:number-' + (index + 1)
+                    )}
                   />
                 )}
               </div>
@@ -51,6 +57,11 @@ const {
                 class={twMerge('text-muted mt-2', descriptionClass, itemClasses?.description)}
                 set:html={description}
               />
+            )}
+            {link && (
+              <a href={link} class="text-link dark:text-white hover:text-link-hover dark:hover:text-link-hover">
+                {link}
+              </a>
             )}
           </div>
         </div>

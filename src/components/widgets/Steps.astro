@@ -12,7 +12,7 @@ const {
   items = [],
   image = await Astro.slots.render('image'),
   isReversed = false,
-
+  numberList = false,
   id,
   isDark = false,
   classes = {},
@@ -33,7 +33,7 @@ const {
           ...((classes?.headline as object) ?? {}),
         }}
       />
-      <Timeline items={items} classes={classes?.items as Record<string, never>} />
+      <Timeline items={items} classes={classes?.items as Record<string, never>} numberList={numberList} />
     </div>
     {
       image && (
