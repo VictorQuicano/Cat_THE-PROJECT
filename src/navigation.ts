@@ -3,11 +3,15 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Inicio',
+      text: 'Información',
       href: getPermalink('/'),
       links: [
         {
-          text: 'Más info',
+          text: 'Inicio',
+          href: getPermalink('/'),
+        },
+        {
+          text: 'Bibliografía',
           href: getPermalink('/para-nerds'),
         },
       ],
@@ -98,9 +102,13 @@ export const headerData = {
       ],
     },*/,
     {
-      text: 'Asesores',
+      text: 'Fundamentos',
       href: getPermalink('/asesores'),
       links: [
+        {
+          text: 'Asesores',
+          href: getPermalink('/asesores'),
+        },
         {
           text: 'Momentos Interesantes',
           href: getPermalink('/momentos-interesantes'),

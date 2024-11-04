@@ -1,7 +1,7 @@
 ---
-import CallToAction from '~/components/widgets/CallToAction.astro';
+//import CallToAction from '~/components/widgets/CallToAction.astro';
 import Content from '~/components/widgets/Content.astro';
-import Features2 from '~/components/widgets/Features2.astro';
+//import Features2 from '~/components/widgets/Features2.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
@@ -93,67 +93,64 @@ const metadata = {
     isReversed
     items={[
       {
-        title: 'High-Quality Designs',
-        description:
-          'Our templates feature top-tier designs that ensure a professional and polished appearance for your projects.',
-        icon: 'tabler:wand',
+        title: 'Retroalimentación grupal',
+        description: 'Una gran parte de los usuarios prefieren observar los movimientos de sus compañeros ',
+        icon: 'tabler:karate',
       },
       {
-        title: 'Customization Tools',
+        title: 'De basico a complicado',
         description:
-          'Tailor each template to your unique needs with user-friendly customization tools that let you personalize colors, fonts, and content.',
-        icon: 'tabler:settings',
+          'A los nuevos usuarios se les suele enseñar primero: movimientos para flexibilidad o acostumbrarlos al ritmo.',
+        icon: 'tabler:stretching-2',
       },
       {
-        title: 'Pre-Designed Elements',
+        title: 'Feedback del entrenador',
         description:
-          'Save time and effort with our ready-to-use elements, including graphics, icons, and layouts that enhance the visual appeal of your creations.',
-        icon: 'tabler:presentation',
-      },
-      {
-        title: 'Preview and Mockup Views',
-        description:
-          'Visualize the final outcome before making any changes using our preview and mockup views, ensuring your projects meet your expectations.',
-        icon: 'tabler:carousel-horizontal',
+          'El sonreir, las palabras de ánimo o el carisma del entrenador ayuda a mantener la motivación de los usuarios.',
+        icon: 'tabler:mood-wink-2',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      src: '~/assets/images/momentos_1.png',
       alt: 'Features Image',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Main Features</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Momentos interesantes</h3>
     </Fragment>
   </Content>
 
-  <!-- Content Widget **************** -->
-
+  <!-- Content Widget **************** 
+  -->
   <Content
     isAfterContent
     items={[
       {
-        title: 'Time Savings',
+        title: 'Ritmos básicos',
         description:
-          'Streamline your workflow, enabling you to create stunning materials efficiently and allocate more time to your core tasks.',
-        icon: 'tabler:clock',
+          'Para usuarios sin ritmo se les suele colocar solo instrumental o incluso se les enseña a contar los tiempos.',
+        icon: 'tabler:brand-bandlab',
       },
       {
-        title: 'Professional Appearance',
+        title: 'Debe ser significativo',
+        description: 'Música del momento o que resulte atractiva para el usuario es muy útil.',
+        icon: 'tabler:brand-bandlab',
+      },
+      {
+        title: 'Ayuda visual',
         description:
-          'Elevate your projects with the polished and sophisticated look that our templates provide, making a lasting impression on your audience.',
+          'El uso de guias visuales en el piso o ver las palmas del profesor ayudan a ubicarse mejor en el espacio.',
         icon: 'tabler:school',
       },
       {
-        title: 'Cost-Efficiency',
-        description:
-          'Benefit from cost savings by avoiding the need for custom design work, as our templates offer professional-grade designs at a fraction of the cost.',
+        title: 'Retroalimentación grupal',
+        description: 'Los usuarios prefieren hacerlo en compañía de alguien más.',
         icon: 'tabler:coin',
       },
       {
-        title: 'Instant Download',
+        title: 'Diversión para constancia',
         description:
-          'Enjoy immediate access to your chosen templates upon purchase, enabling you to begin working on your projects without delay.',
+          'En muchos casos se usa el baile como medio de desestresante, una forma de socializar o para mantener su salud.',
         icon: 'tabler:file-download',
       },
     ]}
@@ -163,62 +160,57 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Benefits</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Necesidades</h3>
     </Fragment>
   </Content>
 
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
-    title="Words from real customers"
+    title="Algunas opiniones Interesantes"
     testimonials={[
       {
-        testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
-        name: 'Emily Kennedy',
-        job: 'Front-end developer',
+        testimonial: `En una ocasión tuve un alumno sordo, por lo que en su caso la ayuda era principalmente visual.`,
+        name: 'Jefferson',
+        job: '  Profesor de baile',
         image: {
-          src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-          alt: 'Emily Kennedy Image',
+          src: '~/assets/images/jefferson.png',
+          alt: 'Jefferson',
         },
       },
       {
-        testimonial: `It beautifully showcases my work, with its clean and elegant design that lets my photographs shine. Customization was a breeze, even for a non-tech person like me. The result is a professional and immersive portfolio that's garnered numerous compliments.`,
-        name: 'Sarah Hansen',
-        job: 'Photographer',
+        testimonial: `Cuando retome el baile primero tuve que ejercitas un poco, ya que fui sedentaria mucho tiempo. Posteriormente recibí ayuda visual como marcas en el piso; o auditiva, aplausos.`,
+        name: 'Solange',
+        job: 'Desarrolladora Full-Stack',
         image: {
-          src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          src: '~/assets/images/solange.png',
           alt: 'Sarah Hansen Image',
         },
       },
       {
-        testimonial: `I discovered these templates and I'm impressed by their variety and quality. They've helped me establish a consistent brand image across my marketing and social platforms, elevating my business's overall appearance.`,
-        name: 'Mark Wilkinson',
-        job: 'Small business owner',
+        testimonial: `La mejor parte de bailar es cuando realizas una coreografía y recibes el apoyo de tus compañeros, a veces cuando no nos salía un paso ibamos juntos a practicarlo.`,
+        name: 'Gabriel Huamanvilca',
+        job: 'Estudiante de Secundaria',
         image: {
-          src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
+          src: '~/assets/images/gabriel.jpg',
           alt: 'Mark Wilkinson Image',
         },
       },
     ]}
-    callToAction={{
-      target: '_blank',
-      text: 'More testimonials...',
-      href: 'https://github.com/onwidget/astrowind',
-      icon: 'tabler:chevron-right',
-    }}
   />
 
-  <!-- CallToAction Widget *********** -->
-
+  <!-- CallToAction Widget *********** 
+  
   <CallToAction
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Start exploring',
-        href: '/',
-      },
-    ]}
-    title="Dive into our template collection"
-    subtitle="Whether you're in business, design, or education, our templates are here to elevate your projects."
+  actions={[
+  {
+    variant: 'primary',
+    text: 'Start exploring',
+    href: '/',
+  },
+  ]}
+  title="Dive into our template collection"
+  subtitle="Whether you're in business, design, or education, our templates are here to elevate your projects."
   />
+  -->
 </Layout>
