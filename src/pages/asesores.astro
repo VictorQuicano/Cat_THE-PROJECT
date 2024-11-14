@@ -6,6 +6,9 @@ import Headline from '~/components/blog/Headline.astro';
 // import PostTags from "~/components/blog/Tags.astro";
 
 export const prerender = true;
+import Hero from '~/components/widgets/Hero.astro';
+import Content from '~/components/widgets/Content.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
 
 // const allCategories = await findCategories();
 // const allTags = await findTags();
@@ -95,4 +98,123 @@ const metadata = {
         allow="autoplay"></iframe>
     </div>
   </div>
+  <Hero
+    id="momentos-interesantes"
+    tagline="Curiosidades"
+    title="Momentos Interesantes"
+    subtitle="Datos curiosos e información relevante que tomamos en cuenta para el desarrollo de nuestro proyecto"
+    image={{
+      src: 'https://media0.giphy.com/media/H1dxi6xdh4NGQCZSvz/giphy.gif?cid=6c09b9524vkpy7x7jb63qi65iy0ah8xhfc83l53w56iy796c&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g',
+      alt: 'Cat Typing',
+    }}
+  />
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Retroalimentación grupal',
+        description: 'Una gran parte de los usuarios prefieren observar los movimientos de sus compañeros ',
+        icon: 'tabler:karate',
+      },
+      {
+        title: 'De basico a complicado',
+        description:
+          'A los nuevos usuarios se les suele enseñar primero: movimientos para flexibilidad o acostumbrarlos al ritmo.',
+        icon: 'tabler:stretching-2',
+      },
+      {
+        title: 'Feedback del entrenador',
+        description:
+          'El sonreir, las palabras de ánimo o el carisma del entrenador ayuda a mantener la motivación de los usuarios.',
+        icon: 'tabler:mood-wink-2',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/momentos_1.png',
+      alt: 'Features Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Momentos interesantes</h3>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** 
+  -->
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Ritmos básicos',
+        description:
+          'Para usuarios sin ritmo se les suele colocar solo instrumental o incluso se les enseña a contar los tiempos.',
+        icon: 'tabler:brand-bandlab',
+      },
+      {
+        title: 'Debe ser significativo',
+        description: 'Música del momento o que resulte atractiva para el usuario es muy útil.',
+        icon: 'tabler:brand-bandlab',
+      },
+      {
+        title: 'Ayuda visual',
+        description:
+          'El uso de guias visuales en el piso o ver las palmas del profesor ayudan a ubicarse mejor en el espacio.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Retroalimentación grupal',
+        description: 'Los usuarios prefieren hacerlo en compañía de alguien más.',
+        icon: 'tabler:coin',
+      },
+      {
+        title: 'Diversión para constancia',
+        description:
+          'En muchos casos se usa el baile como medio de desestresante, una forma de socializar o para mantener su salud.',
+        icon: 'tabler:file-download',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Benefits Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Necesidades</h3>
+    </Fragment>
+  </Content>
+
+  <!-- Testimonials Widget *********** -->
+
+  <Testimonials
+    title="Algunas opiniones Interesantes"
+    testimonials={[
+      {
+        testimonial: `En una ocasión tuve un alumno sordo, por lo que en su caso la ayuda era principalmente visual.`,
+        name: 'Jefferson',
+        job: '  Profesor de baile',
+        image: {
+          src: '~/assets/images/jefferson.png',
+          alt: 'Jefferson',
+        },
+      },
+      {
+        testimonial: `Cuando retome el baile primero tuve que ejercitas un poco, ya que fui sedentaria mucho tiempo. Posteriormente recibí ayuda visual como marcas en el piso; o auditiva, aplausos.`,
+        name: 'Solange',
+        job: 'Desarrolladora Full-Stack',
+        image: {
+          src: '~/assets/images/solange.png',
+          alt: 'Sarah Hansen Image',
+        },
+      },
+      {
+        testimonial: `La mejor parte de bailar es cuando realizas una coreografía y recibes el apoyo de tus compañeros, a veces cuando no nos salía un paso ibamos juntos a practicarlo.`,
+        name: 'Gabriel Huamanvilca',
+        job: 'Estudiante de Secundaria',
+        image: {
+          src: '~/assets/images/gabriel.jpg',
+          alt: 'Mark Wilkinson Image',
+        },
+      },
+    ]}
+  />
 </Layout>

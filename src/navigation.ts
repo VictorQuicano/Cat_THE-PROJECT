@@ -1,4 +1,4 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
@@ -102,7 +102,7 @@ export const headerData = {
       ],
     },*/,
     {
-      text: 'Fundamentos',
+      text: 'Expertos',
       href: getPermalink('/asesores'),
       links: [
         {
@@ -111,7 +111,25 @@ export const headerData = {
         },
         {
           text: 'Momentos Interesantes',
-          href: getPermalink('/momentos-interesantes'),
+          href: getPermalink('/asesores#momentos-interesantes'),
+        },
+      ],
+    },
+    {
+      text: 'Usuarios',
+      href: getPermalink('/usuarios'),
+      links: [
+        {
+          text: 'Encuesta',
+          href: getPermalink('/usuarios#formulario'),
+        },
+        {
+          text: 'Usuarios',
+          href: getPermalink('/usuarios#usuarios'),
+        },
+        {
+          text: 'Momentos Interesantes',
+          href: getPermalink('/usuarios#momentos-interesantes-usuarios'),
         },
       ],
     },
