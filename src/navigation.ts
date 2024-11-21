@@ -34,15 +34,24 @@ export const headerData = {
       links: [
         {
           text: 'Encuesta',
-          href: getPermalink('/usuarios#formulario'),
+          href: getPermalink('/usuarios'),
         },
         {
           text: 'Usuarios',
           href: getPermalink('/usuarios#usuarios'),
         },
         {
-          text: 'Momentos Interesantes',
-          href: getPermalink('/usuarios#momentos-interesantes-usuarios'),
+          text: 'Necesidades',
+          href: getPermalink('/usuarios#necesidades'),
+        },
+      ],
+    },
+    {
+      text: 'Proceso',
+      links: [
+        {
+          text: 'StoryBoard',
+          href: getPermalink('/proceso'),
         },
       ],
     },

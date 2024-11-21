@@ -6,6 +6,7 @@ import Hero from '~/components/widgets/Hero.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
+import { ContentSchemaContainsSlugError } from 'node_modules/astro/dist/core/errors/errors-data';
 
 const metadata = {
   title: 'Momentos Interesantes',
@@ -25,6 +26,7 @@ const metadata = {
     }}
   />
   <Steps2
+    id="formulario"
     title="¿Cómo obtuvimos los datos?"
     subtitle="Realizamos una encuesta a 20 personas separandolas en 4 grupos."
     callToAction='<div class="flex justify-around"><a class="flex flex-col hover:font-bold hover:underline" href="https://forms.gle/wGteDE6kzga5gKFA7" target="_blanck"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Google_Forms_2020_Logo.svg/436px-Google_Forms_2020_Logo.svg.png" class="w-28" alt="formulario"/><p class="w-full text-center font-semibold">Encuesta</p></a><a class="flex flex-col hover:font-bold hover:underline" href="https://docs.google.com/spreadsheets/d/1cyqgbNhLLQ06j0CBAoYMcerO63XH3YQEOUnqDUKIxxo/edit?usp=sharing" target="_blanck"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Google_Sheets_2020_Logo.svg/1200px-Google_Sheets_2020_Logo.svg.png" class="w-28" alt="formulario"/><p class="w-full text-center font-semibold">Resultados</p></a></div>'
@@ -48,24 +50,25 @@ const metadata = {
     ]}
   />
   <Testimonials
+    id="usuarios"
     title="Principales Encuestados"
     testimonials={[
       {
-        testimonial: `En una ocasión tuve un alumno sordo, por lo que en su caso la ayuda era principalmente visual.`,
+        testimonial: `Lo que me gusta de JUST DANCE es que las figuras, pero no me gustan que muchos de los pasos son repetitivos.`,
         name: 'Marisol',
         job: 'Estudiante',
         image: {
           src: '~/assets/images/Marisol.png',
-          alt: 'Jefferson',
+          alt: 'Marisol Paredes',
         },
       },
       {
-        testimonial: `Cuando retome el baile primero tuve que ejercitas un poco, ya que fui sedentaria mucho tiempo. Posteriormente recibí ayuda visual como marcas en el piso; o auditiva, aplausos.`,
-        name: 'Sarahi',
+        testimonial: `Me gustaría aprender a bailar, para poder seguir el paso a mis amigos y no pasar roche, pero no puedo hacerlo con las canciones que a mí me gustan.`,
+        name: 'Sarahi Ochochoque',
         job: 'Estudiante',
         image: {
           src: 'https://scontent.faqp2-1.fna.fbcdn.net/v/t39.30808-6/357808060_3696996887195777_6803725246858916235_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHufaV4MFB3j94ANVBP1O4yiWr1nl4ntGSJavWeXie0ZC5AZO2SVi1vBs5aB486QKp9QeswsJ9FbwIABktDkE17&_nc_ohc=8gcFDgEXiCEQ7kNvgEhrKU6&_nc_zt=23&_nc_ht=scontent.faqp2-1.fna&_nc_gid=AbKY_NgY7Yc2kfl_aibG4Lt&oh=00_AYBQCAuY6vPjSjf-DFtCbebAxV9kwkzf2fRtWX4KczeTKw&oe=67447BE1',
-          alt: 'Sarah Hansen Image',
+          alt: 'Sarahi Ochochoque',
         },
       },
       {
@@ -74,11 +77,37 @@ const metadata = {
         job: 'Estudiante de Administración',
         image: {
           src: 'https://scontent.faqp2-1.fna.fbcdn.net/v/t39.30808-6/277738150_285784403732293_8862162400794856169_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFUPl5sOcAox6ic2FvX8WPlY7zTPET17EVjvNM8RPXsRZDi0FglJyIIkVcPS4fp0BeZlPV_0hCj43YaIx2COk8n&_nc_ohc=9oJ4pKkcjbwQ7kNvgESHPPD&_nc_zt=23&_nc_ht=scontent.faqp2-1.fna&_nc_gid=AYi2cy2RfkltX1ZVYPHfD7T&oh=00_AYCT7w-dssgjIVzUp61_5lncPkgzlx4CQVW89XvLPVZSQg&oe=67449164',
-          alt: 'Mark Wilkinson Image',
+          alt: 'Mary Gonzales',
         },
       },
     ]}
   />
+  <div class="flex flex-col justify-center items-center mt-10 mb-20 mx-5 md:mx-40">
+    <h1 class="text-4xl font-bold text-center">Entrevistas con usuarios</h1>
+    <p class="text-gray-500 text-center mt-4 mb-8">
+      Tanto Marisol, Sarahi y Mary son estudiantes universitarios. Las 3 interesadas en el baile,sin embargo por el
+      momento solo Marisol practica. A continuación se presentan las entrevistas realizadas a cada una de ellas.
+    </p>
+    <div class="flex flex-wrap justify-center items-center gap-10">
+      <div
+        class="w-full flex flex-col justify-center items-center border border-[#111111] bg-[#292929] rounded-lg max-w-fit"
+      >
+        <iframe
+          src="https://drive.google.com/file/d/1xkO2equTWCsCdKje00SwdYVOf4aas14t/preview"
+          allow="autoplay"
+          class="rounded-lg"></iframe>
+        <h4 class="hover:underline mt-0">Entrevista a Sarahi</h4>
+      </div>
+      <div
+        class="w-full flex flex-col justify-center items-center border border-[#111111] bg-[#292929] rounded-lg max-w-fit"
+      >
+        <audio controls>
+          <source src="/imgs/Entrevista_Marisol.mp3" type="audio/mpeg" />
+        </audio>
+        <h4 class="hover:underline mt-0">Entrevista con Marisol</h4>
+      </div>
+    </div>
+  </div>
   <!-- Features2 Widget **************
   
   <Features2
@@ -145,79 +174,86 @@ const metadata = {
   <!-- Content Widget **************** -->
 
   <Content
-    isReversed
+    id="necesidades"
+    isAfterContent
     items={[
       {
-        title: 'Retroalimentación grupal',
-        description: 'Una gran parte de los usuarios prefieren observar los movimientos de sus compañeros ',
+        title: 'Practicar el bailar, sin depender de un horario o espacio definido',
+        description:
+          'Los usuarios necesitan una opción práctica que no depende de horarios o espacios fijos, como clases programadas o salidas en lugares distantes.',
         icon: 'tabler:karate',
       },
       {
-        title: 'De basico a complicado',
+        title: 'Mantener una práctica y rutina de baile constante',
         description:
-          'A los nuevos usuarios se les suele enseñar primero: movimientos para flexibilidad o acostumbrarlos al ritmo.',
+          'Los usuarios necesitan una manera de impulsarlos a que practiquen de forma continua, evitando periodos largos de inactividad.',
         icon: 'tabler:stretching-2',
       },
       {
-        title: 'Feedback del entrenador',
+        title: 'Percibir confianza, seguridad y privacidad al momento de practicar',
         description:
-          'El sonreir, las palabras de ánimo o el carisma del entrenador ayuda a mantener la motivación de los usuarios.',
+          'Los usuarios deben sentirse cómodos, no vigilados, ni juzgados de acuerdo a lo que hacen, al contrario, deben tener un impulso para hacerlo mejor.',
         icon: 'tabler:mood-wink-2',
+      },
+      {
+        title: 'Mejorar la coordinación antes de empezar una nueva rutina',
+        description:
+          'Los usuarios necesitan prepararse a manera de calentamiento antes de empezar una nueva rutina, eso ayuda a que estén más coordinados.',
+        icon: 'tabler:karate',
       },
     ]}
     image={{
-      src: '~/assets/images/momentos_1.png',
+      src: '~/assets/images/Julie_baile.png',
       alt: 'Features Image',
+      class: 'mt-20 min-h-full',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Momentos interesantes</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Necesidades de los usuarios</h3>
     </Fragment>
   </Content>
 
   <!-- Content Widget **************** 
   -->
   <Content
-    isAfterContent
-    items={[
-      {
-        title: 'Ritmos básicos',
-        description:
-          'Para usuarios sin ritmo se les suele colocar solo instrumental o incluso se les enseña a contar los tiempos.',
-        icon: 'tabler:brand-bandlab',
-      },
-      {
-        title: 'Debe ser significativo',
-        description: 'Música del momento o que resulte atractiva para el usuario es muy útil.',
-        icon: 'tabler:brand-bandlab',
-      },
-      {
-        title: 'Ayuda visual',
-        description:
-          'El uso de guias visuales en el piso o ver las palmas del profesor ayudan a ubicarse mejor en el espacio.',
-        icon: 'tabler:school',
-      },
-      {
-        title: 'Retroalimentación grupal',
-        description: 'Los usuarios prefieren hacerlo en compañía de alguien más.',
-        icon: 'tabler:coin',
-      },
-      {
-        title: 'Diversión para constancia',
-        description:
-          'En muchos casos se usa el baile como medio de desestresante, una forma de socializar o para mantener su salud.',
-        icon: 'tabler:file-download',
-      },
-    ]}
+    classes={{ container: 'mt-0' }}
+    isReversed
     image={{
       src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
       alt: 'Benefits Image',
     }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Necesidades</h3>
-    </Fragment>
-  </Content>
+    items={[
+      {
+        title: 'Aprender a bailar ritmos que me gustan o ya conozco',
+        description:
+          'Tanto los pasos como la música deben ser llamativos para el  usuario (ritmos contemporáneos o canciones conocidas que deben complementarse con los pasos a  ejecutar).',
+        icon: 'tabler:brand-bandlab',
+      },
+      {
+        title: 'Aprender fácilmente a bailar',
+        description:
+          'Los usuarios, es especial los que tiene poca experiencia, requieren de un aprendizaje progresigo y sencillo.',
+        icon: 'tabler:brand-bandlab',
+      },
+      {
+        title: 'Mejorar mi coordinación y resistencia en el baile',
+        description:
+          'Los usuarios especializados necesitan retos, les gusta la variedad, incluso dentro de la misma canción, movimientos representativos..',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Medir y evaluar el progreso de forma individual y grupal',
+        description: 'Los usuarios necesitan una manera de evaluar su progreso y ver como lo están haciendo.',
+        icon: 'tabler:coin',
+      },
+      {
+        title: 'Conocer el procedimiento correcto para una buena rutina',
+        description:
+          'Los usuarios necesitan algo o alguien que los guíe para que puedan copiarlo, algo que les muestre cómo deben hacerlo.',
+        icon: 'tabler:file-download',
+      },
+    ]}
+  />
 
   <!-- Testimonials Widget *********** -->
 
