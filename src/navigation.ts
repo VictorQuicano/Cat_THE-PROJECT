@@ -3,104 +3,17 @@ import { getPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Información',
+      text: 'Inicio',
       href: getPermalink('/'),
-      links: [
-        {
-          text: 'Inicio',
-          href: getPermalink('/'),
-        },
-        {
-          text: 'Bibliografía',
-          href: getPermalink('/para-nerds'),
-        },
-      ],
     },
     {
       text: 'Conoce más',
       href: getPermalink('/about'),
-      /*
-      links: [
-        {
-          text: 'SaaS',
-          href: getPermalink('/about/saas'),
-        },
-        {
-          text: 'Startup',
-          href: getPermalink('/about/startup'),
-        },
-        {
-          text: 'Mobile App',
-          href: getPermalink('/about/mobile-app'),
-        },
-        {
-          text: 'Personal',
-          href: getPermalink('/about/personal'),
-        },
-      ],*/
-    } /*
-    {
-      text: 'Pages',
-      links: [
-        {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
-        },
-        {
-          text: 'Services',
-          href: getPermalink('/services'),
-        },
-        {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
-        },
-        {
-          text: 'About us',
-          href: getPermalink('/about'),
-        },
-        {
-          text: 'Contact',
-          href: getPermalink('/contact'),
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
-        },
-      ],
     },
     {
-      text: 'Landing',
-      links: [
-        {
-          text: 'Lead Generation',
-          href: getPermalink('/landing/lead-generation'),
-        },
-        {
-          text: 'Long-form Sales',
-          href: getPermalink('/landing/sales'),
-        },
-        {
-          text: 'Click-Through',
-          href: getPermalink('/landing/click-through'),
-        },
-        {
-          text: 'Product Details (or Services)',
-          href: getPermalink('/landing/product'),
-        },
-        {
-          text: 'Coming Soon or Pre-Launch',
-          href: getPermalink('/landing/pre-launch'),
-        },
-        {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
-        },
-      ],
-    },*/,
+      text: 'Bibliografía',
+      href: getPermalink('/para-nerds'),
+    },
     {
       text: 'Expertos',
       href: getPermalink('/asesores'),
