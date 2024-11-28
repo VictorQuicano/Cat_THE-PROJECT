@@ -35,9 +35,35 @@ const metadata = {
 
     <Fragment slot="subtitle"> Conociendo al usuario y sus necesidades para realizar el proyecto. </Fragment>
   </Hero2>
-  <div class="mx-20 my-10 w-full flex flex-col justify-center items-center">
-    <h1 class="text-center text-4xl font-semibold">Storyboard</h1>
-    <p class="text-center text-gray-500">
+  <div class="px-20 py-10 w-full flex flex-col justify-center items-center">
+    <div class="grid grid-cols-2 gap-x-[50px] gap-y-[20px] p-[80px] items-center justify-center">
+      <h1 class="text-center text-4xl font-semibold">Problema</h1>
+      <h1 class="text-center text-4xl font-semibold">Objetivo</h1>
+      <p class="text-center text-gray-400">
+        Muchas personas desean mantener una rutina de ejercicio regular, llamados por el tema del baile, pero tienen
+        como barrera la falta de motivación, el ejercicios se percibe más como una obligación que como una actividad
+        agradable.
+      </p>
+      <p class="text-center text-gray-400">
+        Lograr que los usuarios puedan empezar y mantener una <b>actividad física</b> constante <b>mediante el baile</b
+        >, de modo que los usuarios se <b>sientan motivados y comprometidos</b> sin percibirlo como una rutina de ejercicio
+        tradicional.
+      </p>
+      <div class="w-full flex justify-center">
+        <img
+          src="https://media.tenor.com/PwRk3c9HVfsAAAAM/sleepy-dog-mike-sleepy.gif"
+          class="w-3/4 rounded-lg h-[350px]"
+        />
+      </div>
+      <div class="w-full flex justify-center">
+        <img
+          src="https://pa1.aminoapps.com/6057/d154ee0b989c9483348636d57e561f665a83d1c3_hq.gif"
+          class="w-3/4 rounded-lg h-[350px]"
+        />
+      </div>
+    </div>
+    <h1 class="text-center text-4xl font-semibold mb-5">Storyboard</h1>
+    <p class="text-center text-gray-400">
       Primero planteamos qué situaciones iba a vivir el usuario desarrollandolo paso a paso en un primer boceto
     </p>
     <iframe
@@ -49,7 +75,7 @@ const metadata = {
       Luego de tener el storyboard, lo validamos con usuarios para ver si era entendible y si cumplía con las
       necesidades que estos tenían.
     </p>
-    <div class="flex flex-grow gap-5 mt-10">
+    <div class="flex flex-row gap-5 pt--10">
       <div class="bg-gray-500 rounded-lg p-2">
         <iframe
           src="https://drive.google.com/file/d/12jfLCTgroLYobL8ZbTNGcTN5NfdhYnRR/preview"
@@ -70,7 +96,7 @@ const metadata = {
       Contemplada la retroalimentación necesaria procedimos al desarrollo de un mockup con la interfaz de usuario.
     </p>
     <div
-      style="position: relative; width: 100%; height: 0; padding-top: 100.0000%;
+      style="position: relative; width: 80%; height: 0; padding-top: 100.0000%;
  padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
  border-radius: 8px; will-change: transform;"
     >
