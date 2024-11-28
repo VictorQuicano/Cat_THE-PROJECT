@@ -35,15 +35,38 @@ const metadata = {
 
     <Fragment slot="subtitle"> Conociendo al usuario y sus necesidades para realizar el proyecto. </Fragment>
   </Hero2>
-  <div class="mx-20 my-10">
+  <div class="mx-20 my-10 w-full flex flex-col justify-center items-center">
     <h1 class="text-center text-4xl font-semibold">Storyboard</h1>
     <p class="text-center text-gray-500">
       Primero planteamos qué situaciones iba a vivir el usuario desarrollandolo paso a paso en un primer boceto
     </p>
-    <iframe class="pdf" src="/imgs/storyboard-cutthecat" width="800" height="500"> </iframe>
-  </div>
+    <iframe
+      src="https://drive.google.com/file/d/1b3Dh_TzCFakHpJh4EEfQ0Hbiihfohe_l/preview"
+      class="w-[1000px] h-[500px] mt-10"
+      allow="autoplay"></iframe>
+    <h2 class="text-center text-3xl font-semibold mt-20">Validación</h2>
+    <p class="text-gary-500 mt-10">
+      Luego de tener el storyboard, lo validamos con usuarios para ver si era entendible y si cumplía con las
+      necesidades que estos tenían.
+    </p>
+    <div class="flex flex-grow gap-5 mt-10">
+      <div class="bg-gray-500 rounded-lg p-2">
+        <iframe
+          src="https://drive.google.com/file/d/12jfLCTgroLYobL8ZbTNGcTN5NfdhYnRR/preview"
+          width="320"
+          height="240"
+          allow="autoplay"></iframe>
+      </div>
+      <div class="bg-gray-500 rounded-lg p-2">
+        <iframe
+          src="https://drive.google.com/file/d/12kvWCD_XjSADmFBPHM6mwFda539bQTfy/preview"
+          width="320"
+          height="240"
+          allow="autoplay"></iframe>
+      </div>
+    </div>
 
-  <!-- Features Widget *************** 
+    <!-- Features Widget *************** 
   <Features
   id="features"
   title="Why choose AstroWind?"
@@ -87,7 +110,7 @@ const metadata = {
       
     -->
 
-  <!-- Content Widget **************** 
+    <!-- Content Widget **************** 
     <Content
     title="Use cases"
     subtitle="Discover how AstroWind's versatile template serves as the ideal solution for various use cases, providing tailored solutions to drive success."
@@ -120,7 +143,7 @@ const metadata = {
   </Content>
   -->
 
-  <!-- Content Widget **************** 
+    <!-- Content Widget **************** 
   <Content
   isAfterContent={true}
   items={[
@@ -150,7 +173,7 @@ const metadata = {
 </Content>
 
 -->
-  <!-- Content Widget **************** 
+    <!-- Content Widget **************** 
 
 <Content
 isReversed
@@ -182,7 +205,7 @@ image={{
 </Content>
 -->
 
-  <!-- Content Widget **************** 
+    <!-- Content Widget **************** 
 <Content
 items={[
 {
@@ -211,7 +234,7 @@ image={{
   </Content>
   -->
 
-  <!-- Pricing Widget ******************* 
+    <!-- Pricing Widget ******************* 
   
   <Pricing
   title="Flexible pricing plans"
@@ -255,7 +278,7 @@ image={{
   />
   -->
 
-  <!-- FAQs Widget ******************* 
+    <!-- FAQs Widget ******************* 
   
   <FAQs
   title="Frequently Asked Questions"
@@ -290,7 +313,7 @@ image={{
     </FAQs>
     -->
 
-  <!-- Steps2 Widget ******************
+    <!-- Steps2 Widget ******************
   
   <Steps2
   title="Reach out to us"
@@ -319,7 +342,7 @@ image={{
     />
     
   -->
-  <!-- BlogLatestPost Widget **************** 
+    <!-- BlogLatestPost Widget **************** 
     
     <BlogLatestPosts
     id="blog"
@@ -331,4 +354,5 @@ image={{
     </Fragment>
   </BlogLatestPosts>
   -->
+  </div>
 </Layout>
