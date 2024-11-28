@@ -53,6 +53,14 @@ export const headerData = {
           text: 'StoryBoard',
           href: getPermalink('/proceso'),
         },
+        {
+          text: 'Validación',
+          href: getPermalink('/proceso#validacion'),
+        },
+        {
+          text: 'Mockup',
+          href: getPermalink('/proceso#mockup'),
+        },
       ],
     },
   ],
