@@ -1,0 +1,44 @@
+---
+import WidgetWrapper2 from '~/components/ui/WidgetWrapper2.astro';
+import ItemGrid3 from '~/components/ui/ItemGrid3.astro';
+import Headline from '~/components/ui/Headline.astro';
+import type { Features as Props } from '~/types';
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  tagline = await Astro.slots.render('tagline'),
+  items = [],
+  columns = 1,
+
+  defaultIcon,
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+---
+
+<WidgetWrapper2 id={id} isDark={isDark} containerClass={`max-w-5xl ${classes?.container ?? ''}`} bg={bg}>
+  <Headline 
+    title={title} 
+    subtitle={subtitle} 
+    tagline={tagline} 
+    classes={{
+      ...((classes?.headline as Record<string, string>) ?? {}),
+      container: 'intersect-once intersect-quarter intercept-no-queue motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade',
+    }} 
+  />
+  <ItemGrid3
+    items={items}
+    columns={columns}
+    defaultIcon={defaultIcon}
+    classes={{
+      container: '',
+      title: 'md:text-[1.3rem]',
+      icon: 'text-white bg-primary rounded-full w-10 h-10 p-2 md:w-12 md:h-12 md:p-3 mr-4 rtl:ml-4 rtl:mr-0',
+      ...((classes?.items as Record<string, never>) ?? {}),
+    }}
+  />
+</WidgetWrapper>

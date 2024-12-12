@@ -3,27 +3,55 @@ import Features2 from '~/components/widgets/Features2.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import Hero from '~/components/widgets/Hero.astro';
 //import Stats from '~/components/widgets/Stats.astro';
+import Steps from '~/components/widgets/Steps.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
   title: 'About us',
 };
+
+const biblio = [
+  {
+    title: 'The use of virtual reality to influence motivation, affect, enjoyment, and engagement during exercise',
+    description:
+      'Mouatt, B., Smith, A. E., Mellow, M. L., Parfitt, G., Smith, R. T., & Stanton, T. R. (2020). The use of virtual reality to influence motivation, affect, enjoyment, and engagement during exercise: A scoping review. Frontiers in Virtual Reality',
+    link: 'https://doi.org/10.3389/frvir.2020.564664',
+  },
+  {
+    title: 'Attractiveness of game elements',
+    description:
+      'Qin, Y. (2021). Attractiveness of game elements, presence, and enjoyment of mobile augmented reality games: The case of Pokémon Go. Telematics and Informatics, 62, 101620',
+    link: 'https://doi.org/10.1016/j.tele.2021.101620',
+  },
+  {
+    title: 'The bright and dark sides of motivation as predictors of enjoyment, intention, and exercise persistence.',
+    description:
+      'Rodrigues, F., Teixeira, D. S., Neiva, H. P., Cid, L., & Monteiro, D. (2019). The bright and dark sides of motivation as predictors of enjoyment, intention, and exercise persistence. Scandinavian Journal of Medicine and Science in Sports, 30(4), 787–800',
+    link: 'https://doi.org/10.1111/sms.13617',
+  },
+  {
+    title: 'Small-Sided Games are More Enjoyable Than High-Intensity Interval Training of Similar Exercise Intensity',
+    description:
+      'Selmi, O., Ouergui, I., Levitt, D. E., Nikolaidis, P. T., Knechtle, B., & Bouassida, A. (2020). Small-Sided Games are More Enjoyable Than High-Intensity Interval Training of Similar Exercise Intensity in Soccer Open Access Journal of Sports Medicine, Volume 11, 77–84',
+    link: 'https://doi.org/10.2147/oajsm.s244512',
+  },
+];
 ---
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="Cómo surge el proyecto"
+    tagline="Objetivo"
     image={{
-      src: '~/assets/images/PrimerosTest.png',
+      src: '~/assets/images/astronauta_bailando_3.png',
       alt: 'Caos Image',
     }}
   >
     <Fragment slot="title">
       BUSCAMOS UN CREAR UN JUEGO QUE TE AYUDE A SER FIT MIENTRAS TE DIVIERTES<br />
-      <div class="'w-full flex justify-center gap-x-10">
+      <!-- <div class="'w-full flex justify-center gap-x-10">
         <a
           href="https://github.com/VictorQuicano/Cat_THE-PROJECT/blob/main/Proyecto%20HCI%20(Dance).pdf"
           class="hover:cursor-pointer font-semibold text-base tracking-wide underline text-gray-400 hover:text-gray-600 flex flex-col items-center my-4"
@@ -57,12 +85,11 @@ const metadata = {
           />
           <p>Grabaciones</p>
         </a>
-      </div>
+      </div> -->
     </Fragment>
 
     <Fragment slot="subtitle">
-      La falta de motivación y ver el ejercicio, aún más el baile, como una obligación hacen que muchos lo abandonen.
-      Hace falta encontrar formas más entretenidas y frescas que vuelvan el ejercicio algo motivador y constante.
+      Actualmente, muchas personas desean mantener una rutina de ejercicio regular, pero la falta de motivación a menudo convierte el ejercicio, y especialmente el baile, en una tarea tediosa que rápidamente abandonan. Es necesario explorar enfoques innovadores y atractivos que transformen el ejercicio en una experiencia divertida y placentera.
     </Fragment>
   </Hero>
   <!-- Stats Widget ****************** -->
@@ -77,51 +104,17 @@ const metadata = {
     ]}
     />
     -->
-
-  <!-- Features3 Widget ************** -->
-
-  <Features3
-    title="NUESTRO OBJETIVO"
-    subtitle="Crear un videojuego que convierta el ejercicio en una experiencia inmersiva y divertida, motivando a los usuarios a mantenerse activos sin rutina.."
-    columns={2}
-    isBeforeContent={true}
-    items={[
-      {
-        title: 'Personas con interés en el entretenimiento',
-        description:
-          'Usuarios que buscan diversión y una experiencia de juego relajada sin presiones de ejercicio. El juego será sencillo, accesible y centrado en la diversión.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Usuarios con interés moderado en actividad física',
-        description:
-          'Personas conscientes de los beneficios del ejercicio que desean mantenerse activos. El juego combinará actividad física y entretenimiento, con una dificultad accesible y no tan exigente como una rutina de gimnasio.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Usuarios que buscan desafíos físicos intensos',
-        description:
-          'Usuarios con experiencia en ejercicio o baile que buscan un reto físico para mejorar su resistencia y habilidades. Se les ofrecerán niveles avanzados y desafíos adaptados a sus capacidades.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Personas con interés en mejorar la psicomotricidad',
-        description:
-          'Usuarios que prefieren una actividad de baja intensidad, enfocada en movimientos específicos para mejorar la coordinación y habilidades motoras, sin demandar un esfuerzo físico elevado.',
-        icon: 'tabler:template',
-      },
-    ]}
-    image={{
-      src: '~/assets/images/vr_image.png',
-      alt: 'Colorful Image',
-    }}
+  <Hero
+    tagline="Idea"
+    title="Concepto"
+    subtitle="El prototipo incial de la idea probado con usuarios"
+    videoLink="https://drive.google.com/file/d/1jDmNIOy4TYh7bK0UShZ4ChXR-RLSsOQv/preview"
   />
-
-  <!-- Features3 Widget ************** -->
-
+  
+  
   <!-- Steps2 Widget ****************** -->
-
-  <Steps2
+  
+  <!-- <Steps2
     title="¿A quiénes buscamos ayudar?"
     subtitle="Nuestro publico objetivo puede contar con una o varias de las siguientes características:"
     items={[
@@ -142,6 +135,18 @@ const metadata = {
         description: 'Prefieren actividades de baja intensidad para trabajar habilidades motoras y coordinación.',
       },
     ]}
+  /> -->
+
+  <Steps
+    title="La Bibliografía"
+    tagline="Nos fundamenta"
+    isReversed={true}
+    items={biblio}
+    numberList
+    image={{
+      src: 'https://media1.tenor.com/m/KyLkCcKPaa8AAAAC/cat-reading.gif',
+      alt: 'Steps image',
+    }}
   />
 
   <!-- Steps2 Widget ****************** -->

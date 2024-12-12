@@ -3,7 +3,7 @@ import Layout from '~/layouts/PageLayout.astro';
 
 //import Header from '~/components/widgets/Header.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
-import Features from '~/components/widgets/Features.astro';
+import Features5 from '~/components/widgets/Features5.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 import Content from '~/components/widgets/Content.astro';
 import Pricing from '~/components/widgets/Pricing.astro';
@@ -23,385 +23,193 @@ const metadata = {
   <!-- Hero2 Widget ******************* -->
 
   <Hero2
-    tagline="Descripción del proceso"
+    tagline="Proceso"
     image={{
-      src: 'https://images.unsplash.com/photo-1580481072645-022f9a6dbf27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      src: 'https://static.tildacdn.com/tild6365-3363-4166-b662-646237663465/what_is_the_most_pop.gif',
+      // src: '/imgs/gato_negocios.gif',
       alt: 'AstroWind Hero Image',
     }}
   >
     <Fragment slot="title">
-      Comenzamos poco a poco a realizar el proyecto, desde la idea hasta la realización de la misma.
+      DESDE LA IDEA HASTA SU REALIZACIÓN
     </Fragment>
 
     <Fragment slot="subtitle"> Conociendo al usuario y sus necesidades para realizar el proyecto. </Fragment>
   </Hero2>
-  <div class="px-20 py-10 w-full flex flex-col justify-center items-center">
-    <div class="grid grid-cols-2 gap-x-[50px] gap-y-[20px] p-[80px] items-center justify-center">
-      <h1 class="text-center text-4xl font-semibold">Problema</h1>
-      <h1 class="text-center text-4xl font-semibold">Objetivo</h1>
-      <p class="text-center text-gray-400">
-        Muchas personas desean mantener una rutina de ejercicio regular, llamados por el tema del baile, pero tienen
-        como barrera la falta de motivación, el ejercicios se percibe más como una obligación que como una actividad
-        agradable.
-      </p>
-      <p class="text-center text-gray-400">
-        Lograr que los usuarios puedan empezar y mantener una <b>actividad física</b> constante <b>mediante el baile</b
-        >, de modo que los usuarios se <b>sientan motivados y comprometidos</b> sin percibirlo como una rutina de ejercicio
-        tradicional.
-      </p>
-      <div class="w-full flex justify-center">
-        <img
-          src="https://media.tenor.com/PwRk3c9HVfsAAAAM/sleepy-dog-mike-sleepy.gif"
-          class="w-3/4 rounded-lg h-[350px]"
-        />
-      </div>
-      <div class="w-full flex justify-center">
-        <img
-          src="https://pa1.aminoapps.com/6057/d154ee0b989c9483348636d57e561f665a83d1c3_hq.gif"
-          class="w-3/4 rounded-lg h-[350px]"
-        />
-      </div>
-    </div>
-    <h1 class="text-center text-4xl font-semibold mb-5">Storyboard</h1>
-    <p class="text-center text-gray-400">
-      Primero planteamos qué situaciones iba a vivir el usuario desarrollandolo paso a paso en un primer boceto
-    </p>
-    <iframe
-      src="https://drive.google.com/file/d/1b3Dh_TzCFakHpJh4EEfQ0Hbiihfohe_l/preview"
-      class="w-[1000px] h-[500px] mt-10"
-      allow="autoplay"></iframe>
-    <h2 class="text-center text-3xl font-bold mt-20 uppercase" id="validacion">Validación</h2>
-    <p class="text-gary-500 mt-10">
-      Luego de tener el storyboard, lo validamos con usuarios para ver si era entendible y si cumplía con las
-      necesidades que estos tenían.
-    </p>
-    <div class="flex flex-row gap-5 pt--10">
-      <div class="bg-gray-500 rounded-lg p-2">
-        <iframe
-          src="https://drive.google.com/file/d/12jfLCTgroLYobL8ZbTNGcTN5NfdhYnRR/preview"
-          width="320"
-          height="240"
-          allow="autoplay"></iframe>
-      </div>
-      <div class="bg-gray-500 rounded-lg p-2">
-        <iframe
-          src="https://drive.google.com/file/d/12kvWCD_XjSADmFBPHM6mwFda539bQTfy/preview"
-          width="320"
-          height="240"
-          allow="autoplay"></iframe>
-      </div>
-    </div>
-    <h2 class="text-center text-3xl font-bold mt-20 uppercase" id="mockup">Mockup</h2>
-    <p class="text-gary-500 mt-10">
-      Contemplada la retroalimentación necesaria procedimos al desarrollo de un mockup con la interfaz de usuario.
-    </p>
-    <div
-      style="position: relative; width: 80%; height: 0; padding-top: 100.0000%;
- padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;"
-    >
-      <iframe
-        loading="lazy"
-        style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-        src="https://www.canva.com/design/DAGXvM9OoZo/RHGBM33dvTe3_-bjpbiXCg/watch?embed"
-        allowfullscreen="allowfullscreen"
-        allow="fullscreen"
-      >
-      </iframe>
-    </div>
-    <a
-      href="https://www.canva.com/design/DAGXvM9OoZo/RHGBM33dvTe3_-bjpbiXCg/watch?utm_content=DAGXvM9OoZo&utm_campaign=designshare&utm_medium=embeds&utm_source=link"
-      target="_blank"
-      rel="noopener">Cut_The_Cat</a
-    > de Alejandro Quicaño
 
-    <!-- Features Widget *************** 
-  <Features
-  id="features"
-  title="Why choose AstroWind?"
-  subtitle="Each of the following features enhances AstroWind's value proposition."
-  columns={2}
-  items={[
-  {
-    title: 'Integration of Astro 4.0 and Tailwind CSS',
-        description:
-        'Offers a powerful combination that enhances both the development process and the end-user experience. Also, allows to build dynamic and visually stunning websites with optimized performance.',
-        icon: 'tabler:layers-union',
-      },
-      {
-        title: 'Versatile design for startups, small businesses, and more',
-        description: `Easily customize AstroWind to harmonize with the unique branding and identity of your venture. AstroWind's versatile design adapts to suit your needs.`,
-        icon: 'tabler:artboard',
-      },
-      {
-        title: 'Effortless customization for portfolios and marketing sites',
-        description:
-        'With intuitive customization, easily showcase portfolio pieces, case studies, project highlights, and relevant content. Ideal for creative professionals and businesses looking to highlight their expertise.',
-        icon: 'tabler:writing',
-      },
-      {
-        title: 'Optimized landing pages and engaging blogs',
-        description: `Landing pages are strategically designed to captivate visitors and prompt specific actions. Additionally, the blog creation feature empowers sharing insights, engaging the audience.`,
-        icon: 'tabler:podium',
-      },
-      {
-        title: 'Fast loading times and production-ready code',
-        description: `Using Astro 4.0 ensures fast loading and seamless rendering, enhancing browsing. The code follows best practices, improving user experience, SEO, and reducing bounce rates.`,
-        icon: 'tabler:rocket',
-      },
-      {
-        title: 'SEO-optimized structure for enhanced visibility',
-        description: `Follows SEO best practices with clean code, semantic HTML markup, and fast loading, enhancing search engine rankings. AstroWind's SEO structure ensures visibility to potential customers and clients.`,
-        icon: 'tabler:eyeglass',
-      },
-      ]}
-      />
-      
-    -->
-
-    <!-- Content Widget **************** 
-    <Content
-    title="Use cases"
-    subtitle="Discover how AstroWind's versatile template serves as the ideal solution for various use cases, providing tailored solutions to drive success."
-    isReversed
+  <Features5
     items={[
-    {
-      title: 'Description:',
-      description:
-      'Are you a startup with big dreams? AstroWind propels your success. Our template forges a seamless online presence, attracting investors and customers from day one. Astro 4.0 and Tailwind CSS ensure striking, responsive sites, leaving lasting impressions. Countless startups leverage AstroWind to kickstart their journey and resonate with audiences.',
-    },
-    {
-      title: 'Benefits:',
-      description: `Allow startups to quickly create professional websites without investing extensive time and resources. <br /> Make a memorable first impression with visually appealing design elements that highlight your startup's unique value proposition. <br /> Ensures your website looks stunning and works well on all devices. <br /> Engage potential investors and customers with engaging content, clear messaging, and intuitive navigation.`,
-    },
+      {
+        title: 'Idea',
+        description:
+          'Comenzamos planteando el problema y el objetivo del proyecto, queríamos encontrar una manera de aumentar la motivación para hacer ejercicio a través del diseño de una interfaz.',
+        image: { src: '/imgs/gato_bailarin.gif', alt: 'Idea' },
+        callToAction: [
+          {
+            variant: 'primary',
+            text: 'Video Conceptual',
+            href: 'https://drive.google.com/file/d/1IqbLwOPwFLPkLQ1QOj8mu1xjTMi_c4uZ/view?usp=sharing',
+            target: '_blank',
+            icon: 'tabler:video',
+          },
+          {
+            variant: 'primary',
+            text: 'Etapa 1 (PDF)',
+            href: 'https://github.com/VictorQuicano/Cat_THE-PROJECT/blob/main/Proyecto%20HCI%20(Dance).pdf',
+            target: '_blank',
+            icon: 'tabler:file-type-pdf',
+          },
+          {
+            variant: 'primary',
+            text: 'Grabaciones',
+            href: 'https://drive.google.com/drive/folders/1A5NRwBOeDtxBwTG_pA8OFuDAjySHJ8o2?usp=sharing',
+            target: '_blank',
+            icon: 'tabler:brand-google-drive',
+          },
+        ],
+
+      },
+      {
+        title: 'Asesoramiento',
+        description:
+          'Entrevista realizada a nuestro experto en el tema, un profesor de baile, se hizo preguntas respecto a la viabilidad del proyecto y se aclaró mejor el objetivo.',
+        image: { src: '/imgs/gato_negocios.gif', alt: 'Entrevista Asesor' },
+        callToAction: [
+          {
+            variant: 'primary',
+            text: 'Entrevista Parte 1',
+            href: 'https://drive.google.com/file/d/1IqbLwOPwFLPkLQ1QOj8mu1xjTMi_c4uZ/view?usp=sharing',
+            target: '_blank',
+            icon: 'tabler:video',
+          },
+          {
+            variant: 'primary',
+            text: 'Entrevista Parte 2',
+            href: 'https://drive.google.com/file/d/1jIauIWfCTQlSlTF9t4QZlBO1MNn87xey/view',
+            target: '_blank',
+            icon: 'tabler:video',
+          },
+          {
+            variant: 'primary',
+            text: 'Entrevista Parte 3',
+            href: 'https://drive.google.com/file/d/1SlmDT5pBOInFPOJ0DNVevjNCC6dRgDot/view',
+            target: '_blank',
+            icon: 'tabler:video',
+          },
+        ],
+
+      },
+      {
+        title: 'Encuesta',
+        description:
+          'Encuesta realizada al público en general sobre su experiencia respecto al baile y las motivaciones que tienen, así como las razones por las que algunos no lo practican.',
+        image: { src: '/imgs/gato_lapicero.gif', alt: 'Encuesta' },
+        callToAction: [
+          {
+            variant: 'primary',
+            text: 'Encuesta',
+            href: 'https://forms.gle/wGteDE6kzga5gKFA7',
+            target: '_blank',
+            icon: 'tabler:file-pencil',
+          },
+          {
+            variant: 'primary',
+            text: 'Resultados',
+            href: 'https://docs.google.com/spreadsheets/d/1cyqgbNhLLQ06j0CBAoYMcerO63XH3YQEOUnqDUKIxxo/edit?usp=sharing',
+            target: '_blank',
+            icon: 'tabler:file-excel',
+          },
+        ],
+      },
+      {
+        title: 'Entrevistas',
+        description:
+          'Se seleccionó a personas distintas dentro de la encuesta para hacerles una entrevista personal, queríamos conocer más a profundidad sus experiencias, preferencias y frustraciones.',
+        image: { src: '/imgs/gato_entrevistado.gif', alt: 'Entrevistas' },
+        callToAction: [
+          {
+            variant: 'primary',
+            text: 'Entrevista Marisol',
+            href: 'https://drive.google.com/file/d/1TUQKidqsh6ofceYCxjs2dcGa7erkVlsH/view?usp=sharing',
+            target: '_blank',
+            icon: 'tabler:headphones',
+          },
+          {
+            variant: 'primary',
+            text: 'Entrevista Sarahi',
+            href: 'https://drive.google.com/file/d/1xkO2equTWCsCdKje00SwdYVOf4aas14t/view',
+            target: '_blank',
+            icon: 'tabler:video',
+          },
+        ],
+      },
+      {
+        title: 'Needfinding',
+        description:
+          'A partir de las entrevistas realizadas, identificamos momentos clave en las experiencias de los usuarios y los convertimos en necesidades que el proyecto debía satisfacer.',
+        image: { src: '/imgs/gato_analista.gif', alt: 'Needfinding' },
+        callToAction: [
+          {
+            variant: 'primary',
+            text: 'Needfinding (PPT)',
+            href: 'https://drive.google.com/file/d/1TUQKidqsh6ofceYCxjs2dcGa7erkVlsH/view?usp=sharing',
+            target: '_blank',
+            icon: 'tabler:slideshow',
+          },
+          {
+            variant: 'primary',
+            text: 'Validación Parte 1',
+            href: 'https://drive.google.com/file/d/12jtK2W9b5dk4-mrFByn-0d1I8b_QWHu8/view?usp=sharing',
+            target: '_blank',
+            icon: 'tabler:video',
+          },
+          {
+            variant: 'primary',
+            text: 'Validación Parte 2',
+            href: 'https://drive.google.com/file/d/12kvWCD_XjSADmFBPHM6mwFda539bQTfy/view?usp=sharing',
+            target: '_blank',
+            icon: 'tabler:video',
+          },
+        ],
+      },
+      {
+        title: 'Storyboard',
+        description:
+          'Creamos un storyboard para cubrir las necesidades mediante varias interfaces. Evaluamos el enfoque con los usuarios y recopilamos retroalimentación valiosa para mejorar la propuesta.',
+        image: { src: '/imgs/gato_dibujante.gif', alt: 'Storyboard' },
+        callToAction: [
+          {
+            variant: 'primary',
+            text: 'Storyboard (PDF)',
+            href: 'https://drive.google.com/file/d/1b3Dh_TzCFakHpJh4EEfQ0Hbiihfohe_l/preview',
+            target: '_blank',
+            icon: 'tabler:file-type-pdf',
+          },
+          {
+            variant: 'primary',
+            text: 'Validacion',
+            href: 'https://drive.google.com/file/d/12jfLCTgroLYobL8ZbTNGcTN5NfdhYnRR/view?usp=sharing',
+            target: '_blank',
+            icon: 'tabler:video',
+          },
+        ],
+      },
+      {
+        title: 'Mockup',
+        description:
+          'Desarrollamos las interfaces detalladamente, explorando nuevas formas de conectar con los usuarios y enfocándonos en métodos innovadores para mantener su motivación.',
+        image: { src: '/imgs/gato_interfaz.gif', alt: 'Mockup' },
+        callToAction: [
+          {
+            variant: 'primary',
+            text: 'Mockup (CANVA)',
+            href: 'https://www.canva.com/design/DAGXvM9OoZo/icQMCGc8baSTGBH_eTHHZQ/edit?utm_content=DAGXvM9OoZo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
+            target: '_blank',
+            icon: 'tabler:artboard',
+          },
+        ],
+      },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1620558138198-cfb9b4f3c294?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1671&q=80',
-      alt: 'Startup Image',
-    }}
-    >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Startup success stories: <br /><span class="text-2xl">Launching with AstroWind</span>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-  -->
-
-    <!-- Content Widget **************** 
-  <Content
-  isAfterContent={true}
-  items={[
-  {
-    title: 'Description:',
-    description: `For SaaS businesses, user experience is key. AstroWind enhances showcasing SaaS solutions intuitively. The template's Astro 4.0 and Tailwind CSS integration guarantees user-friendly experience, mirroring your software's efficiency. Customize pages to communicate SaaS value and solutions for your audience.`,
-  },
-  {
-    title: 'Benefits:',
-    description: `Ensuring a cohesive and user-centric design for your SaaS website. <br /> Effectively communicate complex SaaS features through visual aids, animations, and interactive elements. <br /> Prioritize user needs and pain points through well-structured layouts and clear navigation. <br /> Encourage visitors to take action with strategically placed CTAs. <br /> Ensures your SaaS website works seamlessly across all devices.`,
-  },
-  ]}
-  image={{
-    src: 'https://images.unsplash.com/photo-1531973486364-5fa64260d75b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1658&q=80',
-    alt: 'SaaS Businesses Image',
-  }}
-  >
-  <Fragment slot="content">
-    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-      SaaS showcase: <br /><span class="text-2xl">Streamlining user experience</span>
-    </h3>
-  </Fragment>
-  
-  <Fragment slot="bg">
-    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-  </Fragment>
-</Content>
-
--->
-    <!-- Content Widget **************** 
-
-<Content
-isReversed
-isAfterContent={true}
-items={[
-{
-  title: 'Description:',
-  description: `Your portfolio is your masterpiece, and AstroWind is your canvas. Whether you're a designer, photographer, artist, or any other creative professional, AstroWind empowers you to showcase your work with elegance and sophistication. Tailored to highlight your creative projects, AstroWind's templates offer a visually immersive experience that lets your portfolio shine.`,
-},
-{
-  title: 'Benefits:',
-  description: `Serve as a captivating backdrop to showcase your creative work, capturing attention and leaving a lasting impression. <br /> Tailor your portfolio to reflect your unique style and artistic vision. <br /> Prioritizes visuals, allowing you to present your work in high-resolution detail that draws viewers into your creations. <br /> Enables seamless navigation for effortless portfolio exploration.`,
-},
-]}
-image={{
-  src: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-  alt: 'Portfolio Image',
-}}
->
-<Fragment slot="content">
-  <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-    Creative portfolios: <br /><span class="text-2xl">Highlighting your work</span>
-  </h3>
-</Fragment>
-
-<Fragment slot="bg">
-  <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-</Fragment>
-</Content>
--->
-
-    <!-- Content Widget **************** 
-<Content
-items={[
-{
-  title: 'Description:',
-  description: `For small businesses, a well-crafted website can be a game-changer. AstroWind empowers small businesses to not only establish a credible online presence but also convert visitors into loyal customers. The template's thoughtful design and optimization features ensure that your website doesn't just attract attention but also guides visitors through a seamless journey, ultimately leading to conversions.`,
-},
-{
-  title: 'Benefits:',
-  description: `Present your small business with a professional and polished website that instills confidence and trust among visitors. <br /> Strategically placed CTAs, user-friendly forms, and optimized layouts work together to drive user engagement and conversions. <br /> Ensure a smooth browsing experience, reducing bounce rates and encouraging interaction.`,
-},
-]}
-image={{
-  src: 'https://images.unsplash.com/photo-1514621166532-aa7eb1a3a2f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-  alt: 'Small Business Image',
-}}
->
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Small business growth: <br /><span class="text-2xl">Converting visitors into customers</span>
-      </h3>
-    </Fragment>
-    
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-  -->
-
-    <!-- Pricing Widget ******************* 
-  
-  <Pricing
-  title="Flexible pricing plans"
-  prices={[
-  {
-    title: 'free',
-    subtitle: 'Access to core features and a wide range of templates',
-    price: '0',
-    period: '/ month',
-    callToAction: {
-      target: '_blank',
-      text: 'Get Started for Free',
-      href: '#',
-    },
-  },
-  {
-    title: 'pro',
-    subtitle: 'Premium templates and advanced customization',
-    price: 15,
-    period: '/ Month',
-    callToAction: {
-      target: '_blank',
-      text: 'Upgrade to Pro',
-      href: '#',
-    },
-    hasRibbon: true,
-    ribbonTitle: 'popular',
-  },
-  {
-    title: 'Enterprise',
-    subtitle: 'Tailored solutions for large-scale projects',
-    price: 45,
-    period: '/ Month',
-    callToAction: {
-      target: '_blank',
-      text: 'Unlock Enterprise Features',
-      href: '#',
-    },
-  },
-  ]}
+    classes={{ container: 'max-w-5xl' }}
   />
-  -->
-
-    <!-- FAQs Widget ******************* 
-  
-  <FAQs
-  title="Frequently Asked Questions"
-  items={[
-      {
-        title: 'Is AstroWind compatible with the latest versions of Astro and Tailwind CSS?',
-        description:
-        'Yes, AstroWind is designed to be compatible with the latest versions of both Astro and Tailwind CSS. This ensures that you can harness the full capabilities of these technologies while benefiting from the features offered by AstroWind.',
-        icon: 'tabler:chevrons-right',
-      },
-      {
-        title: 'Can I use AstroWind for both personal and commercial projects?',
-        description: `Certainly! AstroWind is versatile and can be used for a wide range of projects, including both personal and commercial endeavors. Whether you're building a professional portfolio, launching a startup, or creating a marketing website, AstroWind has you covered.`,
-        icon: 'tabler:chevrons-right',
-      },
-      {
-        title: 'What level of coding knowledge is required to use AstroWind?',
-        description:
-        'While some familiarity with HTML, CSS, and web development concepts is helpful, the user-friendly interface and customization options allow those with limited coding experience to create impressive websites. For more advanced users, AstroWind offers extensive customization capabilities.',
-        icon: 'tabler:chevrons-right',
-      },
-      {
-        title: 'Is customer support available for AstroWind users seeking guidance?',
-        description: `Absolutely, our dedicated customer support team is here to assist you with any questions or challenges you may encounter. Feel free to reach out to us through our support channels, and we'll be happy to provide the help you need.`,
-        icon: 'tabler:chevrons-right',
-      },
-      ]}
-      >
-      <Fragment slot="bg">
-        <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-      </Fragment>
-    </FAQs>
-    -->
-
-    <!-- Steps2 Widget ******************
-  
-  <Steps2
-  title="Reach out to us"
-  subtitle="Have questions? Feel free to contact us using the form below. We're here to help!"
-  callToAction={{
-    text: 'Contact us',
-    href: '/',
-    }}
-    items={[
-    {
-      title: 'Email us',
-      description: 'contact@support.com',
-      icon: 'tabler:mail',
-    },
-    {
-      title: 'Call us',
-      description: '+1 (234) 567-890',
-      icon: 'tabler:headset',
-    },
-    {
-      title: 'Follow us',
-      description: '@example',
-      icon: 'tabler:brand-twitter',
-    },
-    ]}
-    />
-    
-  -->
-    <!-- BlogLatestPost Widget **************** 
-    
-    <BlogLatestPosts
-    id="blog"
-    title="Stay informed with AstroWind's blog"
-    information={`Explore our collection of articles, guides, and tutorials on web development, design trends, and using AstroWind effectively for your projects.`}
-    >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </BlogLatestPosts>
-  -->
-  </div>
 </Layout>

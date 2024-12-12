@@ -12,6 +12,7 @@ const {
   content = await Astro.slots.render('content'),
   actions = await Astro.slots.render('actions'),
   image = await Astro.slots.render('image'),
+  videoLink,
 
   id,
   bg = await Astro.slots.render('bg'),
@@ -75,13 +76,22 @@ const {
         class="intersect-once intercept-no-queue intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
       >
         {
-          image && (
-            <div class="relative m-auto max-w-5xl">
+          videoLink ? (
+            <div class="relative flex justify-center items-center m-auto max-w-5xl">
+              <iframe
+                src={videoLink}
+                class="w-3/5"
+                style="aspect-ratio: 16 / 9;"
+                allow="autoplay; fullscreen"
+              ></iframe>
+            </div>
+          ) : image && (
+            <div class="relative flex justify-center items-center m-auto max-w-5xl">
               {typeof image === 'string' ? (
                 <Fragment set:html={image} />
               ) : (
                 <Image
-                  class="mx-auto rounded-md w-full"
+                  class="mx-auto rounded-md w-full object-contain"
                   widths={[400, 768, 1024, 2040]}
                   sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
                   loading="eager"

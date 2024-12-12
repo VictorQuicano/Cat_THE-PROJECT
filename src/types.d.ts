@@ -137,7 +137,7 @@ export interface Item {
   description?: string;
   icon?: string;
   classes?: Record<string, string>;
-  callToAction?: CallToAction;
+  callToAction?: CallToAction | CallToAction[];
   image?: Image;
   link?: string;
 }
@@ -218,6 +218,7 @@ export interface Hero extends Omit<Headline, 'classes'>, Omit<Widget, 'isDark' |
   content?: string;
   actions?: string | CallToAction[];
   image?: string | unknown;
+  videoLink?: IframeHTMLAttributes;
 }
 
 export interface Team extends Omit<Headline, 'classes'>, Widget {
@@ -272,6 +273,7 @@ export interface Steps extends Omit<Headline, 'classes'>, Widget {
   callToAction?: string | CallToAction;
   image?: string | Image;
   isReversed?: boolean;
+  numberList?: boolean;
 }
 
 export interface Content extends Omit<Headline, 'classes'>, Widget {

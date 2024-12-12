@@ -1,0 +1,67 @@
+---
+import type { ItemGrid as Props } from '~/types';
+import { twMerge } from 'tailwind-merge';
+import Button from './Button.astro';
+import { Icon } from 'astro-icon/components';
+
+const { items = [], columns, defaultIcon = '', classes = {} } = Astro.props;
+
+const {
+  container: containerClass = '',
+  panel: panelClass = '',
+  title: titleClass = '',
+  description: descriptionClass = '',
+  icon: defaultIconClass = 'text-primary',
+  action: actionClass = '',
+} = classes;
+---
+
+{
+  items && (
+    <div
+      class={twMerge(
+        `flex flex-col mx-auto`,
+        containerClass
+      )}
+    >
+      {items.map(({ title, description, icon, image, callToAction, classes: itemClasses = {} }, index) => (
+        <div class="intersect-once intersect-quarter intercept-no-queue motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
+          <div class={twMerge('flex flex-col max-w-full', panelClass, itemClasses?.panel, index % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row')}>
+            {image && (
+              <div class={`flex-1 mask-image`}>
+                <img
+                  src={image.src}
+                  alt={image.alt || 'Imagen sin descripción'}
+                  class="rounded-lg shadow-lg w-full h-auto"
+                />
+              </div>
+            )}
+
+            <div class="flex-1 flex flex-col justify-center mt-4 md:mt-0 space-y-3">
+              <div class="flex items-center space-x-2">
+                {(icon || defaultIcon) && (
+                  <Icon
+                    name={icon || defaultIcon}
+                    class={twMerge('w-7 h-7 mr-2 rtl:mr-0 rtl:ml-2', defaultIconClass, itemClasses?.icon)}
+                  />
+                )}
+                {title && <h3 class={twMerge('text-2xl font-bold', titleClass, itemClasses?.title)}>{title}</h3>}
+              </div>
+              {description && (
+                <p
+                  class={twMerge(`${title ? 'mt-3' : ''} text-muted`, descriptionClass, itemClasses?.description)}
+                  set:html={description}
+                />
+              )}
+              {callToAction && (
+                <div class={twMerge(`${title || description ? 'mt-3' : ''}`, actionClass, itemClasses?.actionClass)}>
+                  <Button variant="link" {...callToAction} />
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  )
+}

@@ -7,65 +7,53 @@ export const headerData = {
       href: getPermalink('/'),
     },
     {
-      text: 'Conoce más',
+      text: 'Acerca de',
       href: getPermalink('/about'),
     },
-    {
-      text: 'Bibliografía',
-      href: getPermalink('/para-nerds'),
-    },
-    {
-      text: 'Expertos',
-      href: getPermalink('/asesores'),
-      links: [
-        {
-          text: 'Asesores',
-          href: getPermalink('/asesores'),
-        },
-        {
-          text: 'Momentos Interesantes',
-          href: getPermalink('/asesores#momentos-interesantes'),
-        },
-      ],
-    },
-    {
-      text: 'Usuarios',
-      href: getPermalink('/usuarios'),
-      links: [
-        {
-          text: 'Encuesta',
-          href: getPermalink('/usuarios'),
-        },
-        {
-          text: 'Usuarios',
-          href: getPermalink('/usuarios#usuarios'),
-        },
-        {
-          text: 'Necesidades',
-          href: getPermalink('/usuarios#necesidades'),
-        },
-      ],
-    },
+    // {
+    //   text: 'Expertos',
+    //   href: getPermalink('/asesores'),
+    //   links: [
+    //     {
+    //       text: 'Asesores',
+    //       href: getPermalink('/asesores'),
+    //     },
+    //     {
+    //       text: 'Momentos Interesantes',
+    //       href: getPermalink('/asesores#momentos-interesantes'),
+    //     },
+    //   ],
+    // },
+    // {
+    //   text: 'Usuarios',
+    //   href: getPermalink('/usuarios'),
+    //   links: [
+    //     {
+    //       text: 'Encuesta',
+    //       href: getPermalink('/usuarios'),
+    //     },
+    //     {
+    //       text: 'Usuarios',
+    //       href: getPermalink('/usuarios#usuarios'),
+    //     },
+    //     {
+    //       text: 'Necesidades',
+    //       href: getPermalink('/usuarios#necesidades'),
+    //     },
+    //   ],
+    // },
     {
       text: 'Proceso',
-      links: [
-        {
-          text: 'StoryBoard',
-          href: getPermalink('/proceso'),
-        },
-        {
-          text: 'Validación',
-          href: getPermalink('/proceso#validacion'),
-        },
-        {
-          text: 'Mockup',
-          href: getPermalink('/proceso#mockup'),
-        },
-      ],
+      href: getPermalink('/proceso'),
     },
   ],
   actions: [
-    { text: 'Ver el repositorio', href: 'https://github.com/VictorQuicano/Final_Cut-The-Cat', target: '_blank' },
+    {
+      text: 'Ver el repositorio',
+      href: 'https://github.com/VictorQuicano/Final_Cut-The-Cat',
+      target: '_blank',
+      icon: 'tabler:brand-github',
+    },
   ],
 };
 

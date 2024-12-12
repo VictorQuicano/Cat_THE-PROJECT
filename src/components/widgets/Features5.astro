@@ -1,0 +1,27 @@
+---
+import WidgetWrapper2 from '~/components/ui/WidgetWrapper2.astro';
+import ItemGrid4 from '~/components/ui/ItemGrid4.astro';
+import Headline from '~/components/ui/Headline.astro';
+import type { Features as Props } from '~/types';
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  tagline = await Astro.slots.render('tagline'),
+  items = [],
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+---
+
+<WidgetWrapper2 id={id} isDark={isDark} containerClass={`max-w-5xl ${classes?.container ?? ''}`} bg={bg}>
+  <ItemGrid4
+    items={items}
+    classes={{
+      container: '',
+      ...((classes?.items as Record<string, never>) ?? {}),
+    }}
+  />
+</WidgetWrapper>
