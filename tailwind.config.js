@@ -21,12 +21,17 @@ export default {
 
       animation: {
         fade: 'fadeInUp 1s both',
+        'fade-to-30': 'fade-to-30 1s ease-in-out forwards',
       },
 
       keyframes: {
         fadeInUp: {
           '0%': { opacity: 0, transform: 'translateY(2rem)' },
           '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
+        'fade-to-30': {
+          '0%': { opacity: 0, transform: 'translateY(2rem)' },
+          '100%': { opacity: 0.3, transform: 'translateY(0)' },
         },
       },
     },

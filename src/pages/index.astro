@@ -3,7 +3,7 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
-import Features from '~/components/widgets/Features.astro';
+import Features4 from '~/components/widgets/Features4.astro';
 //import Features2 from '~/components/widgets/Features2.astro';
 //import Steps from '~/components/widgets/Steps.astro';
 //import Content from '~/components/widgets/Content.astro';
@@ -42,9 +42,7 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="subtitle">
-      Un juego de realidad virtual donde los jugadores defienden la Tierra de una invasión de gatitos alienígenas,
-      guiándose por sonidos tridimensionales en un entorno de 360 grados. La experiencia es divertida, accesible y sin
-      presiones, combinando entretenimiento con actividad física.
+      Un juego de realidad virtual donde defenderás la Tierra de una invasión gatuna, muévete y siente el ritmo en un entorno de 360 grados. Una experiencia divertida que combina el entretenimiento con la actividad física ¡Fuera de presiones!
     </Fragment>
   </Hero>
 
@@ -54,6 +52,57 @@ const metadata = {
 
   <!-- Features Widget *************** -->
 
+  <Features4
+    id="features"
+    tagline="Características"
+    title="¿POR QUÉ JUGAR CUT THE CAT?"
+    subtitle="Este juego está diseñado para adaptarse a una amplia variedad de usuarios con diferentes intereses y niveles de habilidad en la actividad física y el baile."
+    items={[
+      {
+        title: 'LO MEJOR DE 2 MUNDOS',
+        description:
+          'Disfruta de una experiencia completa que combina lo mejor del móvil y la realidad virtual.',
+        icon: 'tabler:augmented-reality-2',
+        image: { src: '/imgs/movil_vr_16-9.jpg', alt: 'Celular más VR' },
+      },
+      {
+        title: 'SIENTE CADA MOVIMIENTO',
+        description:
+          'Muévete, gira y sigue el ritmo. Puedes sentir cada movimiento que realizas ¡Una verdadera experiencia inmersiva!',
+        icon: 'tabler:cardboards',
+        image: { src: '/imgs/movement_dark.webp', alt: 'Movimiento' },
+      },
+      {
+        title: 'NO ESTÁS SOLO',
+        description:
+          '¡Siempre a tu lado! Defiende la galaxia junto a tu fiel compañero y hazle frente a la invasión gatuna.',
+        icon: 'tabler:brand-baidu',
+        image: { src: '/imgs/dog_16-9.png', alt: 'Perrito' },
+      },
+      {
+        title: 'PONLE TU TOQUE',
+        description:
+          'Gana monedas por tu destreza y personaliza tu mascota con objetos únicos ¡Un estilo del otro mundo!',
+        icon: 'tabler:crown',
+        image: { src: '/imgs/spatial_dog.png', alt: 'Perrito Espacial' },
+      },
+      {
+        title: 'ELIGE TUS CANCIONES FAVORITAS',
+        description:
+          'Conéctate a Spotify o Apple Music y juega rutinas de baile con tus canciones más escuchadas.',
+        icon: 'tabler:music-heart',
+        image: { src: '/imgs/spotify_apple-music.webp', alt: 'Spotify y Apple Music' },
+      },
+      {
+        title: 'ENCUENTRA TU RETO IDEAL',
+        description:
+          '¿Eres un jugador casual que solo desea divertirse? ¿O buscas un reto que desafíe tus límites? Prefieras lo que prefieras siempre habrá una rutina perfecta para ti.',
+        icon: 'tabler:fall',
+        image: { src: '/imgs/baile.jpg', alt: 'Baile' },
+      },
+    ]}
+  />
+
   <div class="bg-[#111111] w-full py-10 px-4 flex flex-wrap justify-center items-center gap-8">
     <div class="w-full">
       <h3 class="w-full text-4xl font-bold uppercase text-center">🛡️ Desarrollado por 💻</h3>
@@ -61,11 +110,7 @@ const metadata = {
     </div>
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <a href="#">
-        <img
-          class="rounded-t-lg max-h-[280px] min-w-full object-cover"
-          src="https://scontent.faqp2-3.fna.fbcdn.net/v/t1.6435-9/127757655_3683581275038794_8258248733737655190_n.jpg?stp=dst-jpg_tt7&_nc_cat=100&cb=99be929b-defccdb7&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeEr9Durshh9Nt6vaONcRjr_a-qq09D3ut1r6qrT0Pe63Uhs0-6RGSOR7K_nCOhwAXi23-wLAysrot3RdNwYpXlo&_nc_ohc=_YDtm1LUVy4Q7kNvgGAPNWl&_nc_zt=23&_nc_ht=scontent.faqp2-3.fna&_nc_gid=AE0dxX3Or74BGuCFrqP9yXM&oh=00_AYAZDZGt_qi0gaRUXo3xx_JQRqgODlKe0LEECXLPtmPp2g&oe=674A9C79"
-          alt="Alejandro Quicaño"
-        />
+        <img class="rounded-t-lg max-h-[280px] min-w-full object-cover" src="imgs/Victor.jpg" alt="Victor Quicaño"/>
       </a>
       <div class="p-5">
         <a href="#">
@@ -133,45 +178,6 @@ const metadata = {
       </div>
     </div>
   </div>
-
-  <Features
-    id="features"
-    tagline="Características"
-    title="¿Por qué jugar Cut the Cat?"
-    subtitle="Este juego está diseñado para adaptarse a una amplia variedad de usuarios con diferentes intereses y niveles de habilidad en la actividad física y el baile."
-    items={[
-      {
-        title: 'Interfaz Interactiva e Intuitiva en Realidad Virtual',
-        description:
-          'El entorno virtual inmersivo responde a los movimientos del jugador, quien debe interceptar gatitos alienígenas usando sonidos y detección tridimensional.',
-        icon: 'tabler:cardboards',
-      },
-      {
-        title: 'Adaptación a Diferentes Usuarios',
-        description:
-          'El juego se adaptará automáticamente a diferentes tipos de usuarios: ofrecerá rutinas fáciles para jugadores casuales, accesibles para quienes tienen experiencia moderada y desafiantes para aquellos que buscan un reto significativo.',
-        icon: 'tabler:user-exclamation',
-      },
-      {
-        title: 'Entrenamiento Basado en Realidad Virtual (RV)',
-        description:
-          'Se utilizará realidad virtual (RV) o realidad aumentada (RA) para crear entornos temáticos, como selvas, el espacio o ciudades virtuales, donde los ejercicios se convierten en misiones o desafíos, haciendo el entrenamiento más envolvente y entretenido.',
-        icon: 'tabler:apple',
-      },
-      {
-        title: 'Feedback Multisensorial Avanzado',
-        description:
-          'Se incorporarán vibraciones y respuestas táctiles en los dispositivos de control para simular sensaciones y mejorar la inmersión. Además, el juego ofrecerá sonidos 3D para ayudar en la sincronización de movimientos y mostrará indicaciones visuales que mejoren la precisión y el control del movimiento.',
-        icon: 'tabler:brand-ok-ru',
-      },
-      {
-        title: 'Modos de Ejercicio para la Mejora de Psicmotricidad',
-        description:
-          'En este modo, los movimientos se enfocan en mejorar la coordinación mediante patrones simples y repetitivos, en lugar de coreografías complejas, ayudando a los usuarios a fortalecer la psicomotricidad.',
-        icon: 'tabler:stretching-2',
-      },
-    ]}
-  />
 
   <!-- Content Widget **************** -->
   <!--

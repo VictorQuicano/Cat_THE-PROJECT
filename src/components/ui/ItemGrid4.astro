@@ -1,0 +1,84 @@
+---
+import type { ItemGrid as Props } from '~/types';
+import { twMerge } from 'tailwind-merge';
+import Button from './Button.astro';
+import { Icon } from 'astro-icon/components';
+
+const { items = [], classes = {} } = Astro.props;
+
+const {
+  container: containerClass = '',
+  panel: panelClass = '',
+  title: titleClass = '',
+  description: descriptionClass = '',
+  image: imageClass = '',
+  actions: actionsClass = '',
+} = classes;
+---
+
+{
+  items && (
+    <div class={twMerge('grid gap-8', containerClass)}>
+      {items.map(({ title, description, image, callToAction, classes: itemClasses = {}}, index) => (
+        <div class="intersect-once intersect-quarter intercept-no-queue motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
+          <div class={twMerge('flex flex-col md:flex-row gap-6', panelClass, itemClasses?.panel)}>
+            {image && (
+              <div class="flex-shrink-0 w-[200px]">
+                <div
+                  class="relative w-full h-full"
+                  style="min-height: min(300px, calc(var(--text-container-height, 300px)))"
+                >
+                  <img
+                    src={image.src}
+                    alt={image.alt || title}
+                    class="absolute inset-0 w-full h-full object-cover rounded-lg"
+                  />
+                </div>
+              </div>
+            )}
+            <div class="flex flex-col justify-center">
+              {title && (
+                <div class="relative flex items-center">
+                  <span
+                    class="absolute text-gray-300 text-8xl -top-12 font-bold opacity-30 intersect-once intersect-full motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade-to-30"
+                    style="--tw-opacity: 0.3;"
+                    aria-hidden="true"
+                  >
+                    {String(index + 1).padStart(2, '0')}
+                  </span>
+                  <h2 class={twMerge('text-3xl font-bold ml-[8.5rem]', titleClass, itemClasses?.title)}>
+                    {title}
+                  </h2>
+                </div>
+              )}
+              {description && (
+                <p class={twMerge('mt-2 text-base text-muted', descriptionClass, itemClasses?.description)}>
+                  {description}
+                </p>
+              )}
+              {callToAction && (
+                <div class={twMerge(`${title || description ? 'mt-3' : ''}`, actionsClass, itemClasses?.actionClass)}>
+                  <div class="max-w-full flex flex-nowrap flex-col sm:flex-row gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
+                    {Array.isArray(callToAction) ? (
+                      callToAction.map((action) => (
+                        <div class="flex w-full sm:w-auto">
+                          <Button {...(action || {})}
+                            class="w-full sm:mb-0 flex items-center space-x-2 rtl:space-x-reverse"
+                          />
+                        </div>
+                      ))
+                    ) : (
+                      <Button variant="link" {...callToAction}
+                        class="flex items-center space-x-2 rtl:space-x-reverse"
+                      />
+                    )}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  )
+}
