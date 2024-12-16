@@ -23,7 +23,7 @@ const {
         <div class="intersect-once intersect-quarter intercept-no-queue motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
           <div class={twMerge('flex flex-col md:flex-row gap-6', panelClass, itemClasses?.panel)}>
             {image && (
-              <div class="flex-shrink-0 w-[300px]">
+              <div class="flex-shrink-0 w-[200px]">
                 <div
                   class="relative w-full h-full"
                   style="min-height: min(300px, calc(var(--text-container-height, 300px)))"
@@ -40,13 +40,13 @@ const {
               {title && (
                 <div class="relative flex items-center">
                   <span
-                    class="absolute text-gray-300 text-8xl -top-5 font-bold opacity-30 intersect-once intersect-full motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade-to-30"
+                    class="absolute text-gray-300 text-8xl -top-12 font-bold opacity-30 intersect-once intersect-full motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade-to-30"
                     style="--tw-opacity: 0.3;"
                     aria-hidden="true"
                   >
                     {String(index + 1).padStart(2, '0')}
                   </span>
-                  <h2 class={twMerge('text-3xl font-bold ml-10', titleClass, itemClasses?.title)}>
+                  <h2 class={twMerge('text-3xl font-bold ml-[8.5rem]', titleClass, itemClasses?.title)}>
                     {title}
                   </h2>
                 </div>
