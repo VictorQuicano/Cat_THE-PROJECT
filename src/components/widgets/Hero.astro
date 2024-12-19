@@ -19,91 +19,84 @@ const {
 } = Astro.props;
 ---
 
-<section class="relative md:-mt-[76px] not-prose" {...id ? { id } : {}}>
-  <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
-    <slot name="bg">
-      {bg ? <Fragment set:html={bg} /> : null}
-    </slot>
-  </div>
-  <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
-    <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
-    <div class="py-12 md:py-20">
-      <div class="text-center pb-10 md:pb-16 max-w-5xl mx-auto">
+<section class="relative not-prose" {...id ? { id } : {}}>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center md:items-center justify-between">
+    <!-- Contenido textual -->
+    <div class="text-center md:text-left max-w-lg">
+      {
+        tagline && (
+          <p
+            class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
+            set:html={tagline}
+          />
+        )
+      }
+      {
+        title && (
+          <h1
+            class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
+            set:html={title}
+          />
+        )
+      }
+      <div class="max-w-3xl mx-auto">
         {
-          tagline && (
+          subtitle && (
             <p
-              class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
-              set:html={tagline}
+              class="text-xl text-muted mb-6 dark:text-slate-300 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade text-center"
+              set:html={subtitle}
             />
           )
         }
         {
-          title && (
-            <h1
-              class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
-              set:html={title}
-            />
-          )
-        }
-        <div class="max-w-3xl mx-auto">
-          {
-            subtitle && (
-              <p
-                class="text-xl text-muted mb-6 dark:text-slate-300 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
-                set:html={subtitle}
-              />
-            )
-          }
-          {
-            actions && (
-              <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
-                {Array.isArray(actions) ? (
-                  actions.map((action) => (
-                    <div class="flex w-full sm:w-auto">
-                      <Button {...(action || {})} class="w-full sm:mb-0" />
-                    </div>
-                  ))
-                ) : (
-                  <Fragment set:html={actions} />
-                )}
-              </div>
-            )
-          }
-        </div>
-        {content && <Fragment set:html={content} />}
-      </div>
-      <div
-        class="intersect-once intercept-no-queue intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
-      >
-        {
-          videoLink ? (
-            <div class="relative flex justify-center items-center m-auto max-w-5xl">
-              <iframe
-                src={videoLink}
-                class="w-3/5"
-                style="aspect-ratio: 16 / 9;"
-                allow="autoplay; fullscreen"
-              ></iframe>
-            </div>
-          ) : image && (
-            <div class="relative flex justify-center items-center m-auto max-w-5xl">
-              {typeof image === 'string' ? (
-                <Fragment set:html={image} />
+          actions && (
+            <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade mb-8">
+              {Array.isArray(actions) ? (
+                actions.map((action) => (
+                  <div class="flex w-full sm:w-auto">
+                    <Button {...(action || {})} class="w-full sm:mb-0" />
+                  </div>
+                ))
               ) : (
-                <Image
-                  class="mx-auto rounded-md w-full object-contain"
-                  widths={[400, 768, 1024, 2040]}
-                  sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
-                  loading="eager"
-                  width={1024}
-                  height={576}
-                  {...image}
-                />
+                <Fragment set:html={actions} />
               )}
             </div>
           )
         }
       </div>
+      {content && <Fragment set:html={content} />}
+    </div>
+
+    <!-- Contenedor para la imagen, centrada verticalmente -->
+    <div class="flex justify-center items-center mt-8 md:mt-0 intersect-once intercept-no-queue intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
+      {
+        videoLink ? (
+          <div class="relative flex justify-center items-center m-auto max-w-5xl">
+            <iframe
+              src={videoLink}
+              class="w-3/5"
+              style="aspect-ratio: 16 / 9;"
+              allow="autoplay; fullscreen"
+            ></iframe>
+          </div>
+        ) : image && (
+          <div class="mt-8 md:mt-0 flex justify-center md:justify-end">
+            {typeof image === 'string' ? (
+              <Fragment set:html={image} />
+            ) : (
+              <Image
+                class="rounded-md max-w-xs md:max-w-md"
+                widths={[400, 768, 1024, 2040]}
+                sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+                loading="eager"
+                width={1024}
+                height={576}
+                {...image}
+              />
+            )}
+          </div>
+        )
+      }
     </div>
   </div>
 </section>

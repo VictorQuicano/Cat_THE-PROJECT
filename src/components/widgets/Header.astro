@@ -114,10 +114,11 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
                 </>
               ) : (
                 <a
-                  class:list={[
-                    'hover:text-link dark:hover:text-white px-4 py-3 flex items-center whitespace-nowrap',
-                    { 'aw-link-active': href === currentPath },
-                  ]}
+                  class={`relative px-4 py-3 flex items-center whitespace-nowrap font-medium ${
+                    href === currentPath
+                      ? 'bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-teal-500 to-pink-500 after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-gradient-to-r after:from-blue-500 after:via-teal-500 after:to-pink-500'
+                      : 'hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-blue-500 hover:via-teal-500 hover:to-pink-500'
+                  }`}
                   href={href}
                 >
                   {text}
