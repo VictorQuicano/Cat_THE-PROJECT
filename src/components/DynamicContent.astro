@@ -1,0 +1,49 @@
+---
+const { steps } = Astro.props;
+
+let currentStep = steps[0];
+
+function handleStepChange(event) {
+  const stepId = event.detail.step;
+  currentStep = steps.find((step) => step.id === stepId);
+}
+---
+
+<div class="flex flex-col items-center mt-12">
+  <img
+    src={currentStep.image}
+    alt={currentStep.title}
+    class="w-32 h-32 object-cover rounded-lg mb-4"
+  />
+  <h2 class="text-2xl font-bold">{currentStep.title}</h2>
+  <p class="text-gray-600 text-center mt-2">{currentStep.description}</p>
+</div>
+
+<script type="module">
+  // Código del lado del cliente que usa window
+  document.addEventListener('DOMContentLoaded', () => {
+    window.addEventListener('stepChange', (event) => {
+      const stepId = event.detail.step;
+      const steps = JSON.parse(document.getElementById('stepsData').textContent);
+      const currentStep = steps.find((step) => step.id === stepId);
+      
+      // Aquí puedes actualizar el DOM o el estado de tu componente si es necesario
+      // Ejemplo: actualiza la imagen y el título
+      const imgElement = document.querySelector('img');
+      imgElement.src = currentStep.image;
+      imgElement.alt = currentStep.title;
+
+      const h2Element = document.querySelector('h2');
+      h2Element.textContent = currentStep.title;
+
+      const pElement = document.querySelector('p');
+      pElement.textContent = currentStep.description;
+    });
+  });
+</script>
+
+<!-- Este es el paso de datos, que pasarás como JSON -->
+<script type="application/json" id="stepsData">
+  {JSON.stringify(steps)}
+</script>
+

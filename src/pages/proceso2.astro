@@ -1,0 +1,33 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Constellation from '~/components/Constellation.astro';
+import DynamicContent from '~/components/DynamicContent.astro';
+
+// const steps = [
+//   { id: 1, title: 'Idea', description: 'Descripción de la idea...', image: '/imgs/gato_bailarin.gif' },
+//   { id: 2, title: 'Asesoramiento', description: 'Descripción del asesoramiento...', image: '/imgs/gato_negocios.gif' },
+//   // Agrega los demás puntos aquí...
+// ];
+
+const steps = [
+  { id: 1, title: "Step 1" },
+  { id: 2, title: "Step 2" },
+  { id: 3, title: "Step 3" },
+  { id: 4, title: "Step 4" },
+  { id: 5, title: "Step 5" },
+  { id: 6, title: "Step 6" },
+  { id: 7, title: "Step 7" },
+  { id: 8, title: "Step 8" },
+];
+
+const metadata = {
+  title: 'Proceso de realización',
+};
+---
+<Layout metadata={metadata}>
+  <!-- Constelación -->
+  <Constellation steps={steps} />
+
+  <!-- Contenido dinámico -->
+  <DynamicContent steps={steps} />
+</Layout>

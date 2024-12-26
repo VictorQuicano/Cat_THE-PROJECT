@@ -1,0 +1,87 @@
+---
+const { steps } = Astro.props;
+
+// Si no se pasa `steps`, define uno por defecto
+const defaultSteps = Array.from({ length: 8 }, (_, i) => ({
+  id: i + 1,
+  title: `Step ${i + 1}`,
+}));
+const stepsArray = steps || defaultSteps;
+
+let selectedStep = 1;
+
+function selectStep(step) {
+  selectedStep = step;
+  const event = new CustomEvent("stepChange", { detail: { step } });
+  window.dispatchEvent(event);
+}
+---
+
+<div class="relative flex justify-center items-center w-3/5 mx-auto mt-16">
+  {/* SVG para las líneas */}
+  <svg class="absolute w-full h-2" xmlns="http://www.w3.org/2000/svg">
+    {stepsArray.map((step, index) => {
+      const x1 = `${(index / (stepsArray.length - 1)) * 100}%`;
+      const x2 = `${((index + 1) / (stepsArray.length - 1)) * 100}%`;
+      return (
+        index < stepsArray.length - 1 && (
+          <line
+            x1={x1}
+            y1="50%"
+            x2={x2}
+            y2="50%"
+            stroke="gray"
+            stroke-width="2"
+          />
+        )
+      );
+    })}
+  </svg>
+
+  {/* Botones (puntos) */}
+  {stepsArray.map((step, index) => {
+    // Si el índice es par, colocamos el punto arriba (por ejemplo, 30px)
+    // Si es impar, lo colocamos abajo (por ejemplo, -30px)
+    const verticalOffset = index % 2 === 0 ? -30 : 30;
+    
+    return (
+      <button
+        data-id={step.id} // Le damos un id único para referirnos a él más tarde
+        class={`z-10 w-6 h-6 rounded-full absolute ${
+          step.id === selectedStep
+            ? "bg-gradient-to-r from-blue-500 to-pink-500"
+            : "bg-gray-300"
+        }`}
+        style={`left: ${(index / (stepsArray.length - 1)) * 100}%; top: 50% + ${verticalOffset}px; transform: translateX(-50%);`}
+        title={step.title}
+      >
+        {/* Aquí no es necesario `key` */}
+      </button>
+    );
+  })}
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('button[data-id]');
+    let selectedStep = 1;
+
+    buttons.forEach((button) => {
+      button.addEventListener('click', (e) => {
+        const stepId = parseInt(e.target.getAttribute('data-id'));
+        selectedStep = stepId;
+
+        // Dispatch custom event
+        const event = new CustomEvent('stepChange', { detail: { step: stepId } });
+        window.dispatchEvent(event);
+
+        // Update button styles dynamically
+        buttons.forEach((btn) => btn.classList.remove('bg-gradient-to-r', 'from-blue-500', 'to-pink-500'));
+        buttons.forEach((btn) => btn.classList.add('bg-gray-300'));
+
+        e.target.classList.remove('bg-gray-300');
+        e.target.classList.add('bg-gradient-to-r', 'from-blue-500', 'to-pink-500');
+      });
+    });
+  });
+</script>

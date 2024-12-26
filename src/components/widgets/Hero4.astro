@@ -1,0 +1,105 @@
+---
+import Image from '~/components/common/Image.astro';
+import Button from '~/components/ui/Button.astro';
+
+import type { Hero as Props } from '~/types';
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  tagline,
+
+  content = await Astro.slots.render('content'),
+  actions = await Astro.slots.render('actions'),
+  image = await Astro.slots.render('image'),
+  videoLink,
+
+  id,
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+---
+
+<section class="relative not-prose" {...id ? { id } : {}}>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-stretch h-screen">
+    <!-- Contenedor para el video o imagen, ocupa toda la altura -->
+    <div class="flex flex-col justify-center w-1/2 md:w-1/3 p-4 h-full">
+      {
+        videoLink ? (
+          <div class="relative h-full">
+            <!-- Video local -->
+            <video
+              src="/videos/concept.mp4"
+              class="w-auto h-full rounded-md"
+              controls
+              autoplay
+              loop
+              muted
+            ></video>
+          </div>
+        ) : image && (
+          <div class="flex justify-center h-full">
+            {typeof image === 'string' ? (
+              <Fragment set:html={image} />
+            ) : (
+              <Image
+                class="rounded-md max-w-xs md:max-w-md"
+                widths={[400, 768, 1024, 2040]}
+                sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+                loading="eager"
+                width={1024}
+                height={576}
+                {...image}
+              />
+            )}
+          </div>
+        )
+      }
+    </div>
+
+    <!-- Contenido textual -->
+    <div class="text-center md:text-left max-w-lg ml-auto flex flex-col justify-center h-full">
+      {
+        tagline && (
+          <p
+            class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
+            set:html={tagline}
+          />
+        )
+      }
+      {
+        title && (
+          <h1
+            class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
+            set:html={title}
+          />
+        )
+      }
+      <div class="max-w-3xl mx-auto">
+        {
+          subtitle && (
+            <p
+              class="text-xl text-muted mb-6 dark:text-slate-300 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade text-center"
+              set:html={subtitle}
+            />
+          )
+        }
+        {
+          actions && (
+            <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade mb-8">
+              {Array.isArray(actions) ? (
+                actions.map((action) => (
+                  <div class="flex w-full sm:w-auto">
+                    <Button {...(action || {})} class="w-full sm:mb-0" />
+                  </div>
+                ))
+              ) : (
+                <Fragment set:html={actions} />
+              )}
+            </div>
+          )
+        }
+      </div>
+      {content && <Fragment set:html={content} />}
+    </div>
+  </div>
+</section>
